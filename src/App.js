@@ -1,5 +1,4 @@
-import logo from "./logo.svg";
-import "./App.css";
+import './App.css';
 import { Link, Route, Routes } from "react-router-dom";
 import Homepage from "./Components/Homepage/Homepage";
 import Tips from "./Components/Tips/Tips";
@@ -8,15 +7,7 @@ import QandA from "./Components/QandA/QandA";
 function App() {
   return (
     <div className="App">
-      <Link to="/fragor">
-        <button>Frågor</button>
-      </Link>
-      <Link to="/tips">
-        <button>Tips</button>
-      </Link>
-      <Link to="/">
-        <button>Homepage</button>
-      </Link>
+  
 
       <Routes>
         <Route path="/" element={<Homepage />} />
@@ -27,6 +18,16 @@ function App() {
         <Route path="/co2-utslapp" element="" />
         <Route path="/global-uppvarming" element="" />
       </Routes>
+
+      <Link to="/fragor">
+        <button>Frågor</button>
+      </Link>
+      <Link to="/tips">
+        <button>Tips</button>
+      </Link>
+      <Link to="/">
+        <button>Homepage</button>
+      </Link>
     </div>
   );
 }
