@@ -1,0 +1,59 @@
+
+.skyline, .tivoli, .ferriswheel, .reflection {
+    width: 100%;
+}
+
+
+.clouds {
+    position: static;
+    z-index: 25;
+}
+
+.skyline {
+    z-index: 75;
+}
+
+.tivoli {
+    z-index: 100;
+}
+
+.moon {
+    position: static;
+    z-index: 100;
+}
+
+
+.cityWrapper {
+    position: relative;
+    margin-top: 15rem;
+}
+
+
+.skyline, .tivoli, .ferriswheel {
+    position: absolute;
+    bottom: 0;
+} 
+
+
+
+.ferriswheel {
+animation: rotationanimation 15s center;
+transform-origin: center;
+} 
+
+@keyframes rotationanimation {
+    from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+  } 
+
+
+.waterSection {
+  position: relative;
+  z-index: 10;
+    margin-top: -5rem;
+    background-image: linear-gradient(var(--citysemidark), var(--pink));
+}

@@ -1,0 +1,98 @@
+.heroSection {
+    height: 100vh;
+    max-width: 960px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Hämtat från https://css-tricks.com/snippets/css/typewriter-effect/ */
+
+.css-typing h1 {
+  border-right: .15em solid var(--text-primary);
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.css-typing h1:nth-child(1) {
+  width: 30rem;
+  animation: type 4s steps(25, end);
+  animation-fill-mode: forwards;
+}
+
+.css-typing h1:nth-child(2) {
+  width: 50rem;
+  opacity: 0;
+  animation: type2 4s steps(25, end);
+  animation-delay: 4.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes type {
+  0% {
+    width: 0;
+  }
+  99.9% {
+    border-right: .15em solid var(--text-primary);
+  }
+  100% {
+    border: none;
+  }
+}
+
+@keyframes type2 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: .15em solid var(--text-primary);
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+/* Hämtat från https://unused-css.com/blog/animated-down-arrow/ */
+.down-arrow {
+    position: absolute;
+    top: calc(100vh - 60px);
+    left: calc(50% - 14px);
+    width: 0;
+    /* height: 30px;
+    border: 2px solid; */
+    border-radius: 2px;
+    animation: jumpInfinite 1.5s infinite;
+    animation-delay: 9s;
+  }
+  
+  .down-arrow:after {
+    content: " ";
+    position: absolute;
+    top: 12px;
+    left: -10px;
+    width: 16px;
+    height: 16px;
+    border-bottom: 4px solid;
+    border-right: 4px solid;
+    border-radius: 4px;
+    transform: rotateZ(45deg);
+  } 
+
+  @keyframes jumpInfinite {
+    0% {
+      margin-top: 0;
+    }
+    50% {
+      margin-top: 20px;
+    }
+    100% {
+      margin-top: 0;
+    }
+  }
