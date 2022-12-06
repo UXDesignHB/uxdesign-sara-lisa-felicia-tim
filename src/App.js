@@ -3,6 +3,8 @@ import { Link, Route, Routes } from "react-router-dom";
 import Homepage from "./Components/Homepage/Homepage";
 import Tips from "./Components/Tips/Tips";
 import QandA from "./Components/QandA/QandA";
+import Diagram from './Components/Diagram/Diagram';
+
 
 function App() {
   return (
@@ -17,6 +19,7 @@ function App() {
         <Route path="/stigande-havsnivaer" element="" />
         <Route path="/co2-utslapp" element="" />
         <Route path="/global-uppvarming" element="" />
+        <Route path="/diagram" element={<Diagram/>} />
       </Routes>
 
       <Link to="/fragor">
@@ -27,6 +30,9 @@ function App() {
       </Link>
       <Link to="/">
         <button>Homepage</button>
+      </Link>
+      <Link to="/diagram">
+        <button>Diagram</button>
       </Link>
     </div>
   );
