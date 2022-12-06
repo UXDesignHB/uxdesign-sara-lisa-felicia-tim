@@ -32,6 +32,7 @@ const Diagram = () => {
       {/* <div className="diagramWrapper">
             <Line data={data} options={options} ></Line>
       </div> */}
+      <p>Hejsvejs</p>
     </>
   );
 };
