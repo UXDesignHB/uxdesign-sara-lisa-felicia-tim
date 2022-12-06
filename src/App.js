@@ -4,12 +4,14 @@ import Homepage from "./Components/Homepage/Homepage";
 import Tips from "./Components/Tips/Tips";
 import QandA from "./Components/QandA/QandA";
 import Diagram from './Components/Diagram/Diagram';
+import Menu from "./Components/Menu/Menu";
 
 
 function App() {
   return (
     <div className="App">
   
+  <Menu/>
 
       <Routes>
         <Route path="/" element={<Homepage />} />
@@ -22,6 +24,7 @@ function App() {
         <Route path="/diagram" element={<Diagram/>} />
       </Routes>
 
+      
       <Link to="/fragor">
         <button>Frågor</button>
       </Link>
