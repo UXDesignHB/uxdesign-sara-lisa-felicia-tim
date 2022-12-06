@@ -53,7 +53,8 @@ p {
 }
 
 .container {
-  max-width: 960px;
+  max-width: 980px;
+  padding: 5rem;
   margin-right: auto;
   margin-left: auto;
 }

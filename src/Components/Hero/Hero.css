@@ -1,16 +1,15 @@
 .heroSection {
     height: 100vh;
-    max-width: 960px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    margin-left: auto;
-    margin-right: auto;
 }
 
+.heroHeading {
+  font-size: 41.89px;
+}
 
 /* Hämtat från https://css-tricks.com/snippets/css/typewriter-effect/ */
-
 .css-typing h1 {
   border-right: .15em solid var(--text-primary);
   white-space: nowrap;
@@ -18,13 +17,13 @@
 }
 
 .css-typing h1:nth-child(1) {
-  width: 30rem;
+  width: 490px;
   animation: type 4s steps(25, end);
   animation-fill-mode: forwards;
 }
 
 .css-typing h1:nth-child(2) {
-  width: 50rem;
+  width: 850px;
   opacity: 0;
   animation: type2 4s steps(25, end);
   animation-delay: 4.5s;

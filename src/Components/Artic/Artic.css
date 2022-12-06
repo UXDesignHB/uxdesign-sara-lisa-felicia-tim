@@ -1,0 +1,42 @@
+.articSection {
+    display: flex;
+    flex-direction: column;
+    height: 50rem;
+    background-image: linear-gradient(var(--pink), var(--blue));
+}
+
+.articVideo {
+    height: 20rem;
+}
+
+.articImage {
+    position: relative;
+    margin-top: 20rem;
+    bottom: 0;
+}
+
+.glacier {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.bear {
+    z-index: 10;
+    animation: articbear;
+    animation-duration: 3s;
+    animation-iteration-count: 2;
+    animation-timing-function: ease-in;
+    animation-direction: alternate;
+}
+
+
+@keyframes articbear {
+    0%   {left: 0px; top: 0px;}
+    100%  {left: 100px; top: 0px;}
+  }
+ 
+
+.ice {
+    z-index: 0;
+}

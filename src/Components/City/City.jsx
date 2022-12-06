@@ -14,7 +14,7 @@ const City = () => {
      <img className="clouds" src={Clouds}/>
         <img className="moon" src={Moon}/>
         <img className="clouds" src={Clouds}/>
-        <img className="clouds" src={Clouds}/>
+        <img className="clouds2" src={Clouds}/>
 
         <div className="cityWrapper">
         <img className="skyline" src={Skyline}/>

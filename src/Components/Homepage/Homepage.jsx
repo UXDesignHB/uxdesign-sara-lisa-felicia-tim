@@ -2,7 +2,7 @@ import "./Homepage.css";
 import Hero from "../Hero/Hero";
 import Storyline from "../Storyline/Storyline";
 import City from "../City/City";
-import Artic from "../../Artic/Artic";
+import Artic from "../Artic/Artic";
 
 const Homepage = () => {
     return (
