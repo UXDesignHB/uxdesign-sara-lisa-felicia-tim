@@ -7,6 +7,10 @@
     background-color: transparent;
 } */
 
+.story {
+  overflow: hidden;
+}
+
 .container p {
     margin-top: 75vh;   
     max-width: 30rem;
@@ -92,6 +96,8 @@
    z-index: 20;
    animation: diagonal 30s linear infinite;
    margin-top: 10rem;
+   overflow: hidden;
+
 }
 
 @keyframes diagonal{
