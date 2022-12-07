@@ -19,15 +19,7 @@ function App() {
         <Route path="/global-uppvarming" element="" />
       </Routes>
 
-      <Link to="/fragor">
-        <button>Frågor</button>
-      </Link>
-      <Link to="/tips">
-        <button>Tips</button>
-      </Link>
-      <Link to="/">
-        <button>Homepage</button>
-      </Link>
+    
     </div>
   );
 }

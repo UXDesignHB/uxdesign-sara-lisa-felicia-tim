@@ -3,11 +3,61 @@
     flex-direction: column;
     height: 50rem;
     background-image: linear-gradient(var(--pink), var(--blue));
+    position: relative;
+    z-index: 100;
 }
 
 .articVideo {
     height: 20rem;
 }
+
+.articButtons {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    align-items: center;
+}
+
+.articButtons .articButton:nth-child(1) h3 {
+    text-shadow: 1px 1px 2px var(--blue), 0 0 1em var(--blue), 0 0 0.2em var(--blue);
+}
+
+.articButtons:nth-child(2) .articButton h3 {
+    text-shadow: 1px 1px 2px yellow, 0 0 1em greenyellow, 0 0 0.2em blue;
+}
+
+.articButtons .articButton:nth-child(3) h3 {
+    text-shadow: 0 0 0.5em var(--pink);
+}
+
+.articButtons .articButton:nth-child(4) h3 {
+    text-shadow: 0 0 0.5em var(--purple);
+}
+
+.articButtons .articButton:nth-child(5) h3 {
+    text-shadow: 0 0 0.5em var(--green);
+}
+
+.articButtons .articButton:nth-child(6) h3 {
+    text-shadow: 0 0 0.5em var(--green);
+}
+
+
+.plusIcon {
+    font-size: 1.2rem;
+}
+
+.arrowIcon {
+    font-size: 1.5rem;
+}
+
+.articButton {
+    display: grid;
+    grid-template-columns: 2rem auto;
+    grid-template-rows: auto;
+    align-items: center;
+}
+
 
 .articImage {
     position: relative;
