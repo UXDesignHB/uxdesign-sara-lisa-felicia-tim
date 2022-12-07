@@ -11,12 +11,12 @@
   overflow: hidden;
 }
 
-.container p {
+.story p {
     margin-top: 75vh;   
-    max-width: 30rem;
+    max-width: 35rem;
 }
 
-.story p:nth-child(2), .container p:nth-child(4) {
+.story p:nth-child(2), .story p:nth-child(4) {
    margin-left: 50%;
 }
 

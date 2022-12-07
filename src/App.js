@@ -23,7 +23,6 @@ function App() {
         <Route path="/global-uppvarming" element="" />
         <Route path="/diagram" element={<Diagram/>} />
       </Routes>
-
       
       <Link to="/fragor">
         <button>Frågor</button>
@@ -37,6 +36,7 @@ function App() {
       <Link to="/diagram">
         <button>Diagram</button>
       </Link>
+
     </div>
   );
 }
