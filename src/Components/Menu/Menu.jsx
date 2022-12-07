@@ -34,7 +34,7 @@ function Navigation() {
 
   return (
     <div ref={menuRef}>
-      <IconContext.Provider value={{ color: '#faebd7' }}>
+      <IconContext.Provider value={{ color: '#F9F5F5' }}>
         <div className='navbar'>
           <NavLink to='#' className='menu-bars'>
             <FaIcons.FaBars onClick={showSidebar} />
