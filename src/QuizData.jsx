@@ -1,4 +1,10 @@
+
+import SolIkon from '../src/Images/ClimateIcons/SolIkon.png'
+import IsbergIkon from '../src/Images/ClimateIcons/IsbergIkon.png'
+import Co2Ikon from '../src/Images/ClimateIcons/Co2Ikon.png'
+
 import Moon from "../src/Images/Moon.png";
+
 
 export function getQuestions() {
     return questions;
@@ -13,7 +19,11 @@ export function getQuestions() {
         { answerText: 'Paris', isCorrect: true },
         { answerText: 'Dublin', isCorrect: false },
       ],
+
+      questionIcon: <img className="quizIcon" src={SolIkon} />,
+
       questionIcon: <img className="clouds2" src={Moon}/>,
+
     },
     {
       questionText: 'Who is CEO of Tesla?',
@@ -23,6 +33,7 @@ export function getQuestions() {
         { answerText: 'Bill Gates', isCorrect: false },
         { answerText: 'Tony Stark', isCorrect: false },
       ],
+      questionIcon: <img className="quizIcon" src={IsbergIkon} />,
     },
     {
       questionText: 'The iPhone was created by which company?',
@@ -32,6 +43,7 @@ export function getQuestions() {
         { answerText: 'Amazon', isCorrect: false },
         { answerText: 'Microsoft', isCorrect: false },
       ],
+      questionIcon: <img className="quizIcon" src={Co2Ikon} />,
     },
     {
       questionText: 'How many Harry Potter books are there?',
@@ -41,5 +53,6 @@ export function getQuestions() {
         { answerText: '6', isCorrect: false },
         { answerText: '7', isCorrect: true },
       ],
+      questionIcon: <img className="quizIcon" src={SolIkon} />,
     },
   ];
