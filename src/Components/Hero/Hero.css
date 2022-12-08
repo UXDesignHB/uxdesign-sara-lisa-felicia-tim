@@ -1,3 +1,6 @@
+.hero {
+  background-color: var(--citydark);
+}
 .heroSection {
     height: 100vh;
     display: flex;

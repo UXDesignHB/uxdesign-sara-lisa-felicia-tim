@@ -4,7 +4,7 @@ import "./Hero.css";
 const Hero = () => {
     return (
 
-        
+    <div className="hero">
         <div className = "heroSection container"> 
 
 <div class="css-typing">
@@ -18,6 +18,7 @@ const Hero = () => {
 
         <div className="down-arrow "></div>
     </div>
+    </div>    
     );
 }
  

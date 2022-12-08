@@ -166,8 +166,7 @@ setTheme(newTheme);
         <Route path="/global-uppvarming" element="" />
         <Route path="/diagram" element={<Diagram/>} />
       </Routes>
-    
-
+  
     </div>
   );
 }
