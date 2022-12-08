@@ -1,7 +1,6 @@
 /* nya menyn */
 
 .navbar {
-    background-color: var(--background);
     height: 80px;
     display: flex;
     justify-content: start;

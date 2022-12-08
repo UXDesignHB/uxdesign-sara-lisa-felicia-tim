@@ -37,8 +37,6 @@ const QandA = () => {
 
           <div className="headerButtons">
 
-              <button>Dark mode</button>
-
               <button className="closeButton">X</button>
           </div>
       </header>
@@ -60,10 +58,15 @@ const QandA = () => {
             </div>
             <div className="largeText">
               {quizArray[currentQuestion].questionText}
+              {quizArray.questionIcon}
             </div>
+<<<<<<< main
             <div>
               {quizArray[currentQuestion].questionIcon}
             </div>
+=======
+            <div> {quizArray[currentQuestion].questionIcon}</div>
+>>>>>>> main
           </div>
           <div className="quizAnswer">
             {quizArray[currentQuestion].answerOptions.map((answerOption) => (

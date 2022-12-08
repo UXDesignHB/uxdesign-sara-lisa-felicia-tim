@@ -1,6 +1,10 @@
+
 import SolIkon from '../src/Images/ClimateIcons/SolIkon.png'
 import IsbergIkon from '../src/Images/ClimateIcons/IsbergIkon.png'
 import Co2Ikon from '../src/Images/ClimateIcons/Co2Ikon.png'
+
+import Moon from "../src/Images/Moon.png";
+
 
 export function getQuestions() {
     return questions;
@@ -15,7 +19,11 @@ export function getQuestions() {
         { answerText: 'Paris', isCorrect: true },
         { answerText: 'Dublin', isCorrect: false },
       ],
+
       questionIcon: <img className="quizIcon" src={SolIkon} />,
+
+      questionIcon: <img className="clouds2" src={Moon}/>,
+
     },
     {
       questionText: 'Who is CEO of Tesla?',
