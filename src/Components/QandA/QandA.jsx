@@ -61,6 +61,9 @@ const QandA = () => {
             <div className="largeText">
               {quizArray[currentQuestion].questionText}
             </div>
+            <div>
+              {quizArray[currentQuestion].questionIcon}
+            </div>
           </div>
           <div className="quizAnswer">
             {quizArray[currentQuestion].answerOptions.map((answerOption) => (
