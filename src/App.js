@@ -166,19 +166,7 @@ setTheme(newTheme);
         <Route path="/global-uppvarming" element="" />
         <Route path="/diagram" element={<Diagram/>} />
       </Routes>
-      
-      <Link to="/fragor">
-        <button>Frågor</button>
-      </Link>
-      <Link to="/tips">
-        <button>Tips</button>
-      </Link>
-      <Link to="/">
-        <button>Homepage</button>
-      </Link>
-      <Link to="/diagram">
-        <button>Diagram</button>
-      </Link>
+    
 
     </div>
   );
