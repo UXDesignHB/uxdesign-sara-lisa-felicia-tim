@@ -9,11 +9,13 @@ import Menu from "./Components/Menu/Menu";
 import useLocalStorage from 'use-local-storage'
 
 import { styled } from '@mui/material/styles';
-import FormGroup from '@mui/material/FormGroup';
+// import FormGroup from '@mui/material/FormGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Switch from '@mui/material/Switch';
-import Stack from '@mui/material/Stack';
-import Typography from '@mui/material/Typography';
+// import Stack from '@mui/material/Stack';
+// import Typography from '@mui/material/Typography';
+
+import ThemePopup from "./Components/ThemePopup/ThemePopup";
 
 const MaterialUISwitch = styled(Switch)(({ theme }) => ({
   width: 62,
@@ -61,9 +63,6 @@ const MaterialUISwitch = styled(Switch)(({ theme }) => ({
     borderRadius: 20 / 2,
   },
 }));
-=======
-import ThemePopup from "./Components/ThemePopup/ThemePopup";
-
 
 
 
@@ -167,20 +166,7 @@ setTheme(newTheme);
         <Route path="/global-uppvarming" element="" />
         <Route path="/diagram" element={<Diagram/>} />
       </Routes>
-      
-      <Link to="/fragor">
-        <button>Frågor</button>
-      </Link>
-      <Link to="/tips">
-        <button>Tips</button>
-      </Link>
-      <Link to="/">
-        <button>Homepage</button>
-      </Link>
-      <Link to="/diagram">
-        <button>Diagram</button>
-      </Link>
-
+  
     </div>
   );
 }
