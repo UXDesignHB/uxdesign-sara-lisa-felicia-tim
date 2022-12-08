@@ -1,29 +1,32 @@
 import "./ThemePopup.css";
 
-//Tim gör denna
+const ThemePopup = ({ data }) => {
+  // const [themedata, setData] = useState(data);
 
-const ThemePopup = () => {
-    
-    return ( 
-        <div className="container">
+  return (
+    <div className="container">
+      {data
+        .filter((arrayID) => arrayID.id === "1")
+        .map((arrayData) => (
+          <div key={arrayData.title}>
+            <h1 style={{color: arrayData.textcolor }} className="bigHeading">{arrayData.title} </h1>
+            <p style={{color: arrayData.textcolor }}>{arrayData.subtitle}</p>
 
-        <header>
-            <h1 className="bigHeading">Rubrik</h1>
-
-            <div className="headerButtons">
-
-                <button>Dark mode</button>
-
-                <button className="closeButton">X</button>
+            <div className="popupGrid">
+              <div className="topLeftGrid"></div>
+              <div className="topRightGrid">
+                <p  className="smallHeading">
+                  <b style={{color: arrayData.textcolor }}>{arrayData.graphtitle}</b>
+                </p>
+                <p>{arrayData.graphtext}</p>
+              </div>
+              <div className="bottomLeftGrid"></div>
+              <div className="bottomRightGrid"></div>
             </div>
-
-        </header>
-
-        <p className="mediumHeading">Detta är theme komponenten</p>
-        <p className="smallHeading">Detta är theme komponenten</p>
-
+          </div>
+        ))}
     </div>
-     );
-}
- 
+  );
+};
+
 export default ThemePopup;
