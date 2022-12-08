@@ -45,7 +45,13 @@
 .appNavBar {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 200;
 }
+
 
 .roundButtons{
   padding: 10px;
@@ -80,7 +86,6 @@ header {
   font-size: 4.3rem;
   text-transform: uppercase;
 }
-
 
 .mediumHeading {
   font-size: 1.6rem;

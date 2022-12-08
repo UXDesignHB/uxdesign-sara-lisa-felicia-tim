@@ -1,3 +1,5 @@
+import Moon from "../src/Images/Moon.png";
+
 export function getQuestions() {
     return questions;
   }
@@ -11,6 +13,7 @@ export function getQuestions() {
         { answerText: 'Paris', isCorrect: true },
         { answerText: 'Dublin', isCorrect: false },
       ],
+      questionIcon: <img className="clouds2" src={Moon}/>,
     },
     {
       questionText: 'Who is CEO of Tesla?',

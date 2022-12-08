@@ -152,6 +152,7 @@ setTheme(newTheme);
         // label="MUI switch"
         onClick={switchTheme} 
         title="Dark mode"
+     
       />
     
   </div>

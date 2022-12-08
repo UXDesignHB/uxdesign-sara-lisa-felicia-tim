@@ -16,7 +16,7 @@ const Hero = () => {
   </h1>
 </div>
 
-        <div className="down-arrow "></div>
+       
     </div>
     </div>    
     );

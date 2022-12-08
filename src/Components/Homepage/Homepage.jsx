@@ -7,7 +7,10 @@ import Artic from "../Artic/Artic";
 const Homepage = () => {
     return (
     <>
+        <div className="arrow"><div className="down-arrow "></div></div>
+
         <Hero/>
+
         <div className="citySection">
         <div id="stars3"></div>
         <div id="stars4"></div>
