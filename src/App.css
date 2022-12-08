@@ -2,6 +2,7 @@
   color: var(--text-primary);
   margin: 0px;
   padding: 0px;
+  text-decoration: none;
 }
 
 .App {
@@ -36,6 +37,13 @@
   --purple: #B29BCA;
   --pink: #EC8394;
   --yellow: #F1C454;
+  --citydark: #A8DAEA; 
+  --citysemidark: #EC8394;
+}
+
+.appNavBar {
+  display: flex;
+  flex-direction: row;
 }
 
 .roundButtons{

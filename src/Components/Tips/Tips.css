@@ -1,0 +1,66 @@
+.tipsBigHeading { /* Vet inte hur jag har samma namn från app.css men bara ändrar färgen på rubriken */
+    color: #9DCCAF;
+  }
+
+.outerContainer {
+  margin-top: 15px;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(3, auto);
+  justify-items: center;
+  align-items: center;
+  grid-template-areas: "item1 item2 item3";
+  gap: 15px;
+}
+
+.innerContainer {
+  padding: 1em;
+  height: 30vh; /* height och width anger storleken på kvadraten*/
+  width: 30vh;  /* height och width anger storleken på kvadraten*/
+}
+
+
+
+
+#item1 {
+  grid-area: item1;
+  justify-self: end;
+  align-self: start;
+  border: 4px solid #ec8394;
+
+}
+
+#item2 {
+  grid-area: item2;
+  justify-self: end;
+  align-self: start;
+  border: 4px solid #a8daea;
+}
+
+#item3 {
+  grid-area: item3;
+  justify-self: center;
+  align-self: center;
+  border: 4px solid #9dccaf;
+}
+
+#item4 {
+  border: 4px solid #f1c454;
+}
+
+#item5 {
+  border: 4px solid #b29bca;
+}
+
+#item6 {
+  border: 4px solid #ec8394;
+}
+
+
+.line{ 
+    height: 1px;
+    flex: 1;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
