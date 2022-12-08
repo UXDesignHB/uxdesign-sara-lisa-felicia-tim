@@ -12,36 +12,58 @@
 }
 
 .articButtons {
+    width: 100%;
     display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto;
+    grid-template-columns: 2rem repeat(2, 1fr) 2rem;
+    grid-template-rows: 1fr 1fr;
+    z-index: 100;
+    position: relative;
+}
+
+.articButton {
+    display: grid;
+    grid-template-columns: 2rem auto;
+    grid-template-rows: 2rem 2rem;
     align-items: center;
 }
 
-.articButtons .articButton:nth-child(1) h3 {
+.articButtonHeading1 {
+    text-shadow: 1px 1px 2px var(--purple), 0 0 1em var(--purple), 0 0 0.2em var(--purple);
+}
+
+.articButtonHeading2{
+    text-shadow: 1px 1px 2px var(--pink), 0 0 1em var(--pink), 0 0 0.2em var(--pink);
+}
+
+.articButtonHeading3 {
     text-shadow: 1px 1px 2px var(--blue), 0 0 1em var(--blue), 0 0 0.2em var(--blue);
 }
 
-.articButtons:nth-child(2) .articButton h3 {
-    text-shadow: 1px 1px 2px yellow, 0 0 1em greenyellow, 0 0 0.2em blue;
+.articButtonHeading4 {
+    text-shadow: 1px 1px 2px var(--yellow), 0 0 1em var(--yellow), 0 0 0.2em var(--yellow);
 }
 
-.articButtons .articButton:nth-child(3) h3 {
-    text-shadow: 0 0 0.5em var(--pink);
+.articButtonHeading5 {
+    text-shadow: 1px 1px 2px var(--green), 0 0 1em var(--green), 0 0 0.2em var(--green);
 }
 
-.articButtons .articButton:nth-child(4) h3 {
-    text-shadow: 0 0 0.5em var(--purple);
+.articButtonHeading6 {
+    text-shadow: 1px 1px 2px var(--green), 0 0 1em var(--green), 0 0 0.2em var(--green);
 }
 
-.articButtons .articButton:nth-child(5) h3 {
-    text-shadow: 0 0 0.5em var(--green);
+
+.articParagraph {
+    display: flex;
+    flex-direction: row;
 }
 
-.articButtons .articButton:nth-child(6) h3 {
-    text-shadow: 0 0 0.5em var(--green);
+.articParagraph1 {
+    text-transform: uppercase;
 }
 
+.articParagraph2 {
+    color: aquamarine;
+}
 
 .plusIcon {
     font-size: 1.2rem;
@@ -50,14 +72,6 @@
 .arrowIcon {
     font-size: 1.5rem;
 }
-
-.articButton {
-    display: grid;
-    grid-template-columns: 2rem auto;
-    grid-template-rows: auto;
-    align-items: center;
-}
-
 
 .articImage {
     position: relative;

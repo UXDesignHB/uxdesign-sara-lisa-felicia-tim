@@ -1,8 +1,9 @@
 .heroSection {
     height: 100vh;
     display: flex;
-    align-items: center;
     justify-content: flex-start;
+    align-items: center;
+    margin-top: -20vh;
 }
 
 .heroHeading {

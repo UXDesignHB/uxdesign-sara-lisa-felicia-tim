@@ -35,11 +35,14 @@ function Navigation() {
   return (
     <div ref={menuRef}>
       <IconContext.Provider value={{ color: '#F9F5F5' }}>
+
         <div className='navbar'>
           <NavLink to='#' className='menu-bars'>
             <FaIcons.FaBars onClick={showSidebar} />
           </NavLink>
+          
         </div>
+
         <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
           <ul className='nav-menu-items' onClick={showSidebar}>
             <li className='navbar-toggle'>
