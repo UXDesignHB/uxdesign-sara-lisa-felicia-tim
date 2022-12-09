@@ -16,6 +16,7 @@ import Switch from '@mui/material/Switch';
 // import Typography from '@mui/material/Typography';
 
 import ThemePopup from "./Components/ThemePopup/ThemePopup";
+import Co2 from './Components/Co2/Co2';
 
 const MaterialUISwitch = styled(Switch)(({ theme }) => ({
   width: 62,
@@ -163,7 +164,7 @@ setTheme(newTheme);
         <Route path="/fragor" element={<QandA />} />
         <Route path="/smaltande-glaciarer" element= { <ThemePopup data={data} /> } />
         <Route path="/stigande-havsnivaer" element="" />
-        <Route path="/co2-utslapp" element="" />
+        <Route path="/co2-utslapp" element={ <Co2  data={data}/> } />
         <Route path="/global-uppvarming" element="" />
         <Route path="/diagram" element={<Diagram/>} />
       </Routes>
