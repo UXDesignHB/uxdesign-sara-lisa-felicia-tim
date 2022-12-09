@@ -1,21 +1,29 @@
 .articSection {
+    overflow: hidden;
     display: flex;
     flex-direction: column;
-    height: 50rem;
-    background-image: linear-gradient(var(--pink), var(--blue));
+    height: 75rem;
+    background-image: linear-gradient(var(--pink), var(--blue), var(--blue));
     position: relative;
     z-index: 100;
 }
 
 .articVideo {
-    height: 20rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.video {
+    width: 100%;
 }
 
 .articButtons {
-    width: 100%;
+    padding: 2vh 5vw;
+    max-width: 90vw;
     display: grid;
-    grid-template-columns: 2rem repeat(2, 1fr) 2rem;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 20vh 20vh;
     z-index: 100;
     position: relative;
 }
@@ -74,32 +82,32 @@
 }
 
 .articImage {
-    position: relative;
-    margin-top: 20rem;
+    width: 100vw;
+    position: absolute;
     bottom: 0;
 }
 
 .glacier {
-    width: 100%;
+    width: 100vw;
     position: absolute;
     bottom: 0;
 }
 
 .bear {
     z-index: 10;
-    animation: articbear;
+    /* animation: articbear;
     animation-duration: 3s;
     animation-iteration-count: 2;
     animation-timing-function: ease-in;
-    animation-direction: alternate;
+    animation-direction: alternate; */
 }
 
-
+/* 
 @keyframes articbear {
     0%   {left: 0px; top: 0px;}
     100%  {left: 100px; top: 0px;}
   }
- 
+  */
 
 .ice {
     z-index: 0;

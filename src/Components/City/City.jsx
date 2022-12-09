@@ -4,7 +4,7 @@ import Clouds from "../../Images/Clouds.png";
 import Skyline from "../../Images/Skyline.png";
 import Ferriswheel from "../../Images/Ferriswheel.png";
 import Tivoli from "../../Images/Tivoli.png";
-import Reflection from "../../Images/Reflection.png";
+import Reflection from "../../Images/Reflection1.png";
 
 const City = () => {
     return ( 

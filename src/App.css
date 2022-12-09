@@ -22,7 +22,8 @@
   --pink: #EC8394;
   --yellow: #F1C454;
   --citydark: #130203;
-  --citysemidark: #48385a;
+  --citysemidark: #130203;
+  --citybright: #48385a;
 }
 
 [data-theme='light'] {
@@ -38,8 +39,8 @@
   --pink: #EC8394;
   --yellow: #F1C454;
   --citydark: #A8DAEA; 
-  --citysemidark: #F1C454;
-  --citylight: #F1C454;
+  --citysemidark: #EC8394;
+  --citybright: #F1C454;
 }
 
 .appNavBar {
@@ -51,7 +52,6 @@
   top: 0;
   z-index: 200;
 }
-
 
 .roundButtons{
   padding: 10px;
