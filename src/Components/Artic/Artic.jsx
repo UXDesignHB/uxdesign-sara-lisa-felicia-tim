@@ -13,10 +13,13 @@ const Artic = () => {
     
             <div className="articSection">
         
-            <div className="articVideo">
+            <div className="container articVideo">
+                <div>
                 <h2>Lorem impsum</h2>
                 <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias libero eligendi eveniet nihil perspiciatis facere ipsam. Nesciunt eum debitis unde magni, minima ut ex optio est architecto quibusdam eaque pariatur?</p>
-                <iframe src="https://youtu.be/H71LG6xgZII" frameborder="0"></iframe>
+                </div>
+                
+                <iframe src="https://youtu.be/H71LG6xgZII" frameborder="0" className="video"></iframe>
             </div>
 <div className="articImage">
 <div className="articButtons">

@@ -58,6 +58,6 @@ transform-origin: center;
 .waterSection {
   position: relative;
   z-index: 10;
-    margin-top: -5rem;
-    background-image: linear-gradient(var(--citysemidark), var(--pink));
+    margin-top: -2rem;
+    background-image: linear-gradient(var(--citybright), var(--pink));
 }

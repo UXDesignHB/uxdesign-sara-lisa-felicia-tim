@@ -60,9 +60,12 @@ const QandA = () => {
               {quizArray[currentQuestion].questionText}
               {quizArray.questionIcon}
             </div>
+
+
             <div>
               {quizArray[currentQuestion].questionIcon}
             </div>
+
           </div>
           <div className="quizAnswer">
             {quizArray[currentQuestion].answerOptions.map((answerOption) => (
