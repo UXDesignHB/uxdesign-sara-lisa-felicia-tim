@@ -6,6 +6,7 @@
     background-color: #252d4a;
     min-height: 12.5rem;
     height: 15.625rem;
+    /* height: min-content; */
     padding: 20px;
     box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
     display: flex;
@@ -64,6 +65,19 @@
     align-items: center;
     border: 5px solid #234668;
     cursor: pointer;
+  }
+
+  .btn:nth-child(1) {
+    border-color: var(--blue);
+  }
+  .btn:nth-child(2) {
+    border-color: var(--purple);
+  }
+  .btn:nth-child(3) {
+    border-color: var(--pink);
+  }
+  .btn:nth-child(4) {
+    border-color: var(--green);
   }
   
   .restart-btn {
