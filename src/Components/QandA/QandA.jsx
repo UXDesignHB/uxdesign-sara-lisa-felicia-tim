@@ -61,11 +61,10 @@ const QandA = () => {
               {quizArray.questionIcon}
             </div>
 
+
             <div>
               {quizArray[currentQuestion].questionIcon}
             </div>
-
-            <div> {quizArray[currentQuestion].questionIcon}</div>
 
           </div>
           <div className="quizAnswer">
