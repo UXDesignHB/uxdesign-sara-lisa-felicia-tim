@@ -31,14 +31,14 @@ const QandA = () => {
   };
 
     return ( 
-      <div className="container">
+    <div className="container">
       <header>
           <h1 className="quizHeading bigHeading">Quiz</h1>
 
-          <div className="headerButtons">
+          {/* <div className="headerButtons">
 
               <button className="closeButton">X</button>
-          </div>
+          </div> */}
       </header>
       <div className="quizWrapper">
       {showScore ? (
@@ -53,15 +53,12 @@ const QandA = () => {
       ) : (
         <>
           <div className="quizLeft">
-            <div className="quizQuestionCount smallHeading">
+            {/* <div className="quizQuestionCount smallHeading">
               <span>Fråga {currentQuestion + 1}</span>/{quizArray.length}
-            </div>
+            </div> */}
             <div className="largeText">
               {quizArray[currentQuestion].questionText}
-              {quizArray.questionIcon}
             </div>
-
-
             <div>
               {quizArray[currentQuestion].questionIcon}
             </div>
@@ -76,11 +73,13 @@ const QandA = () => {
                 {answerOption.answerText}
               </button>
             ))}
+            <div className="quizQuestionCount smallHeading">
+              <span>Fråga {currentQuestion + 1}</span>/{quizArray.length}
+            </div>
           </div>
         </>
       )}
     </div>
-
   </div>
      );
 }
