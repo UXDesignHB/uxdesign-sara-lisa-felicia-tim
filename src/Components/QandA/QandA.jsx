@@ -31,7 +31,7 @@ const QandA = () => {
   };
 
     return ( 
-    <div className="container">
+    <div className="container quizContainer">
       <header>
           <h1 className="quizHeading bigHeading">Quiz</h1>
 
@@ -59,7 +59,7 @@ const QandA = () => {
             <div className="largeText">
               {quizArray[currentQuestion].questionText}
             </div>
-
+            {quizArray[currentQuestion].questionIcon}
           </div>
           <div className="quizAnswer">
             {quizArray[currentQuestion].answerOptions.map((answerOption) => (
