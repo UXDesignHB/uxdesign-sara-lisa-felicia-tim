@@ -31,7 +31,7 @@ const QandA = () => {
   };
 
     return ( 
-    <div className="container">
+    <div className="container quizContainer">
       <header>
           <h1 className="quizHeading bigHeading">Quiz</h1>
 

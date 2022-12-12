@@ -1,3 +1,7 @@
+.quizContainer {
+  height: 76vh;
+}
+
 .quizHeading {
     color: var(--green);
   }
