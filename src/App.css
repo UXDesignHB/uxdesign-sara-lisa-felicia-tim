@@ -108,3 +108,14 @@ header {
 
 
 
+
+/* Popup CSS  */
+.popupGrid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+}
+
+.containermargin{
+  padding: 200px 0px 400px 0px;
+}

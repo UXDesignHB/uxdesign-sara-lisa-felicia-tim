@@ -1,10 +1,8 @@
 import "./Co2.css";
-import * as React from 'react';
-import Box from '@mui/material/Box';
-import InputLabel from '@mui/material/InputLabel';
-import MenuItem from '@mui/material/MenuItem';
-import FormControl from '@mui/material/FormControl';
-import Select from '@mui/material/Select';
+
+import Vid from "../../Images/StigandeHavsniva.mp4";
+import { useState } from "react";
+import ReactPlayer from "react-player";
 
 import {
   LineChart,
@@ -15,16 +13,6 @@ import {
   Tooltip,
   Legend,
 } from "recharts";
-
-// import {
-//   BarChart,
-//   Bar,
-//   XAxis,
-//   YAxis,
-//   CartesianGrid,
-//   Tooltip,
-//   Legend,
-// } from "recharts";
 
 const co2data = [
   {
@@ -2629,93 +2617,93 @@ const co2data = [
   }
 ];
 
-
 const Co2 = ({ data }) => {
-  // const [themedata, setData] = useState(data);
-
-  const [age, setAge] = React.useState('');
-
-  const handleChange = (event) => {
-    setAge(event.target.value);
+  const [isVideoLoaded, setIsVideoLoaded] = useState(false);
+  const onLoadedData = () => {
+    setIsVideoLoaded(true);
   };
 
   return (
+    <div className="containermargin">
     <div className="container">
-      {data
-        .filter((arrayID) => arrayID.id === "2")
-        .map((arrayData) => (
-          <div key={arrayData.title}>
-            <h1 style={{ color: arrayData.textcolor }} className="bigHeading">
-              {arrayData.title}{" "}
-            </h1>
-            <p style={{ color: arrayData.textcolor }}>{arrayData.subtitle}</p>
-
-            <div className="popupGrid">
-              <div className="topLeftGrid">
-               
-
-                <LineChart
-                  width={490}
-                  height={400}
-                  data={co2data}
-                  margin={{
-                    top: 5,
-                    bottom: 5,
-                    left: -15,
-                  }}
-                >
-                  <CartesianGrid strokeDasharray="3 3" />
-                  <XAxis dataKey="Year" />
-                  <YAxis />
-                  <Tooltip />
-                  <Legend />
-                  {/* <Line
-                    type="monotone"
-                    dataKey="Solid Fuel"
-                    stroke="#8884d8"
-                    activeDot={{ r: 8 }}
-                  />
-                  <Line
-                    type="monotone"
-                    dataKey="Cement"
-                    stroke="#82ca9d"
-                  /> */}
-                   <Line
-                    type="monotone"
-                    dataKey="Gas Flaring"
-                    stroke={arrayData.textcolor}
-                  />
-
-                </LineChart>
-
-
-                <p>
-                  Data: GISS Surface Temperature (GISTEMP) analys och den
-                  globala komponenten av Climate at a Glance (GCAG).
-                </p>
-              </div>
-              <div className="topRightGrid">
-                <p className="smallHeading">
-                  <b style={{ color: arrayData.textcolor }}>
-                    {arrayData.graphtitle}
-                  </b>
-                </p>
-                <p>{arrayData.graphtext}</p>
-              </div>
-              <div className="bottomLeftGrid">
-                <p className="smallHeading">
-                  <b style={{ color: arrayData.textcolor }}>
-                    {arrayData.videotitle}
-                  </b>
-                </p>
-                <p>{arrayData.videotext}</p>
-              </div>
-              <div className="bottomRightGrid"></div>
-            </div>
-          </div>
-        ))}
-    </div>
+         {data
+           .filter((arrayID) => arrayID.id === "2")
+           .map((arrayData) => (
+             <div key={arrayData.title}>
+               <h1 style={{ color: arrayData.textcolor }} className="bigHeading">
+                 {arrayData.title}{" "}
+               </h1>
+               <p style={{ color: arrayData.textcolor }}>{arrayData.subtitle}</p>
+    
+               <div className="popupGrid">
+                 <div className="topLeftGrid">
+                 <LineChart
+                      width={490}
+                      height={400}
+                      data={co2data}
+                      margin={{
+                        top: 5,
+                        bottom: 5,
+                        left: -15,
+                      }}
+                    >
+                      <CartesianGrid strokeDasharray="3 3" />
+                      <XAxis dataKey="Year" />
+                      <YAxis />
+                      <Tooltip />
+                      <Legend />
+    
+                      <Line
+                        type="monotone"
+                        dataKey="Cement"
+                        stroke={arrayData.textcolor}
+                      />
+                    </LineChart>
+                   <p>
+                     Data: GISS Surface Temperature (GISTEMP) analys och den
+                     globala komponenten av Climate at a Glance (GCAG).
+                   </p>
+                 </div>
+                 <div className="topRightGrid">
+                   <p className="smallHeading">
+                     <b style={{ color: arrayData.textcolor }}>
+                       {arrayData.graphtitle}
+                     </b>
+                   </p>
+                   <p>{arrayData.graphtext}</p>
+                 </div>
+                 <div className="bottomLeftGrid">
+                   <p className="smallHeading">
+                     <b style={{ color: arrayData.textcolor }}>
+                       {arrayData.videotitle}
+                     </b>
+                   </p>
+                   <p>{arrayData.videotext}</p>
+                 </div>
+                 <div className="bottomRightGrid">
+                   <div className="vidcontainer">
+                     <div >
+                       <ReactPlayer
+                         url= "https://youtu.be/AyszFPGbu2s"
+                  
+                         playing={true}
+                         // controls={true}
+                         loop={true}
+                         muted={true}
+                          playsinline={true}
+                         onReady={onLoadedData}
+                       />
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           ))}
+       </div>
+       </div>
   );
 };
 
-export default Co2;
+export default Co2 ;
+
+
