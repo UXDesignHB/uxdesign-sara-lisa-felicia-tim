@@ -3,13 +3,15 @@
   }
   
   .quizWrapper {
-    background-color: #252d4a;
+    /* background-color: #252d4a; */
     min-height: 12.5rem;
-    height: 15.625rem;
-    padding: 20px;
-    box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
+    /* height: 15.625rem; */
+    height: min-content;
+    /* padding: 20px; */
     display: flex;
     justify-content: space-evenly;
+    padding-top: 2rem;
+    /* padding-bottom: 6.2rem; */
   }
   
   .quizScore {
@@ -26,15 +28,15 @@
   .quizLeft {
     width: 100%;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   
   .quizQuestionCount {
-    margin-bottom: 20px;
+    margin-top: 20px;
+    align-self: flex-end;
   }
-  
-  /* .quizQuestionCount span {
-    font-size: 28px;
-  } */
   
   .largeText {
     margin-bottom: 12px;
@@ -43,7 +45,7 @@
   .quizIcon {
     width: 6rem;
     height: auto;
-    margin-top: 3rem;
+    padding-bottom: 1.5rem;
   }
   
   /* ANSWERS/RIGHT SECTION */
@@ -56,14 +58,27 @@
   
   .btn {
     width: 100%;
-    /* font-size: 16px; */
-    background-color: #252d4a;
+    background-color: var(--background);
     display: flex;
-    padding: 0.6rem;
+    padding: 0.8rem;
+    margin-bottom: 0.5rem;
     justify-content: center;
     align-items: center;
-    border: 5px solid #234668;
+    border: 3px solid;
     cursor: pointer;
+  }
+
+  .btn:nth-child(1) {
+    border-color: var(--blue);
+  }
+  .btn:nth-child(2) {
+    border-color: var(--purple);
+  }
+  .btn:nth-child(3) {
+    border-color: var(--pink);
+  }
+  .btn:nth-child(4) {
+    border-color: var(--green);
   }
   
   .restart-btn {
@@ -73,15 +88,20 @@
   }
   
   .correct {
-    background-color: #2f922f;
+    background-color: #2f922f89;
   }
   
-  .incorrect {
+  /* .incorrect {
     background-color: #ff3333;
-  }
+  } */
   
   .btn:hover {
-    background-color: #555e7d;
+    background-color: #f9f5f535;
+  }
+
+  [data-theme='light'] .btn:hover {
+    background-color: rgba(0, 0, 0, 0.066);
+    /* box-shadow: 5px 4px 10px 0px rgba(0, 0, 0, 0.23); */
   }
   
   .btn:focus {

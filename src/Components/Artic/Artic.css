@@ -1,21 +1,29 @@
 .articSection {
+    overflow: hidden;
     display: flex;
     flex-direction: column;
-    height: 50rem;
-    background-image: linear-gradient(var(--pink), var(--blue));
+    height: 75rem;
+    background-image: linear-gradient(var(--pink), var(--blue), var(--blue));
     position: relative;
     z-index: 100;
 }
 
 .articVideo {
-    height: 20rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.video {
+    width: 100%;
 }
 
 .articButtons {
-    width: 100%;
+    padding: 2vh 5vw;
+    max-width: 90vw;
     display: grid;
-    grid-template-columns: 2rem repeat(2, 1fr) 2rem;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 20vh 20vh;
     z-index: 100;
     position: relative;
 }
@@ -65,41 +73,76 @@
     color: aquamarine;
 }
 
-.plusIcon {
+/* .plusIcon {
     font-size: 1.2rem;
+    background-color: ;
 }
+
+.articButton:hover .plusIcon {
+    font-size: 1.4rem;
+    transform: rotatex(180deg);
+      box-shadow: 0 0 0 0 rgba(#5a99d4, .5);
+      border-radius: 50%;
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+      margin: 10px;
+      height: 20px;
+      width: 20px;
+      transform: scale(1);
+      animation: pulse-black 2s infinite;
+} */
+
+.icon:before {
+    content: '';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    border: 2px solid var(--text-primary);
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    text-shadow: 1px 1px 2px var(--green), 0 0 1em var(--green), 0 0 0.2em var(--green);
+    box-shadow: 1px 1px 2px var(--green), 0 0 1em var(--green), 0 0 0.2em var(--green);;
+  }
+
+.plus:before {
+    content: '+';
+  }
+
 
 .arrowIcon {
     font-size: 1.5rem;
 }
 
 .articImage {
-    position: relative;
-    margin-top: 20rem;
+    width: 100vw;
+    position: absolute;
     bottom: 0;
 }
 
 .glacier {
-    width: 100%;
+    width: 100vw;
     position: absolute;
     bottom: 0;
 }
 
 .bear {
     z-index: 10;
-    animation: articbear;
+    /* animation: articbear;
     animation-duration: 3s;
     animation-iteration-count: 2;
     animation-timing-function: ease-in;
-    animation-direction: alternate;
+    animation-direction: alternate; */
 }
 
-
+/* 
 @keyframes articbear {
     0%   {left: 0px; top: 0px;}
     100%  {left: 100px; top: 0px;}
   }
- 
+  */
 
 .ice {
     z-index: 0;
