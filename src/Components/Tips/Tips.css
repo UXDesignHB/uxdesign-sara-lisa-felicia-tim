@@ -69,37 +69,37 @@
 
 
 .flip-card-front1 {
-  background: url("../../Images/ClimateIcons/Co2Ikon.png") center no-repeat;
+  background: url("../../Images/ClimateIcons/CO2.png") center no-repeat;
   background-size: 100px;
   border: 4px solid var(--pink);
 }
 
 .flip-card-front2 {
-  background: url("../../Images/ClimateIcons/IsbergIkon.png") center no-repeat;
+  background: url("../../Images/ClimateIcons/Ice.png") center no-repeat;
   background-size: 100px;
   border: 4px solid var(--blue);
 }
 
 .flip-card-front3 {
-  background: url("../../Images/ClimateIcons/SolIkon.png") center no-repeat;
+  background: url("../../Images/ClimateIcons/Sun.png") center no-repeat;
   background-size: 100px;
   border: 4px solid var(--green);
 }
 
 .flip-card-front4 {
-  background: url("../../Images/ClimateIcons/Co2Ikon.png") center no-repeat;
+  background: url("../../Images/ClimateIcons/CO2.png") center no-repeat;
   background-size: 100px;
   border: 4px solid var(--yellow);
 }
 
 .flip-card-front5 {
-  background: url("../../Images/ClimateIcons/IsbergIkon.png") center no-repeat;
+  background: url("../../Images/ClimateIcons/Ice.png") center no-repeat;
   background-size: 100px;
   border: 4px solid var(--purple);
 }
 
 .flip-card-front6 {
-  background: url("../../Images/ClimateIcons/SolIkon.png") center no-repeat;
+  background: url("../../Images/ClimateIcons/Sun.png") center no-repeat;
   background-size: 100px;
   border: 4px solid var(--pink);
 }

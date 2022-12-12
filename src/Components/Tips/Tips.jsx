@@ -1,5 +1,5 @@
 import "./Tips.css";
-import Co2Ikon from "../../Images/ClimateIcons/Co2Ikon.png";
+import CO2 from "../../Images/ClimateIcons/CO2.png";
 
 const Tips = () => {
   return (

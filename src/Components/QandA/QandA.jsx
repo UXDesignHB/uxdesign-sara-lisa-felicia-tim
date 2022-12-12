@@ -59,7 +59,7 @@ const QandA = () => {
             <div className="largeText">
               {quizArray[currentQuestion].questionText}
             </div>
-
+            {quizArray[currentQuestion].questionIcon}
           </div>
           <div className="quizAnswer">
             {quizArray[currentQuestion].answerOptions.map((answerOption) => (
