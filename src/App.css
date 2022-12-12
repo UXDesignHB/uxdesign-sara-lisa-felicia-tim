@@ -85,11 +85,14 @@ header {
   font-family: headline-gothic-atf, sans-serif;
   font-size: 4.3rem;
   text-transform: uppercase;
+  letter-spacing: 0.25rem;
 }
 
 .mediumHeading {
   font-size: 1.6rem;
+  font-weight: 600;
   text-transform: uppercase;
+  letter-spacing: 0.25rem;
 }
 
 .smallHeading {
