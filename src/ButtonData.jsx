@@ -29,5 +29,11 @@ export const ButtonData = [
     paragrap2: 'lorem impsum',
     link: '/tips',
     color: 'articButton articButton5'
+}, {
+    heading: 'Vad vet jag om klimatförändringarna?',
+    paragraph1: 'Lorem ipsum',
+    paragrap2: 'lorem impsum',
+    link: '/fragor',
+    color: 'articButton articButton5'
 }
   ];
