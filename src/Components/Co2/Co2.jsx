@@ -3,6 +3,11 @@ import "./Co2.css";
 import Vid from "../../Images/StigandeHavsniva.mp4";
 import { useState } from "react";
 import ReactPlayer from "react-player";
+import InputLabel from '@mui/material/InputLabel';
+import MenuItem from '@mui/material/MenuItem';
+import FormControl from '@mui/material/FormControl';
+import Select from '@mui/material/Select';
+import * as React from 'react';
 
 import {
   LineChart,
@@ -13,6 +18,7 @@ import {
   Tooltip,
   Legend,
 } from "recharts";
+import { color } from "@mui/system";
 
 const co2data = [
   {
@@ -2623,6 +2629,11 @@ const Co2 = ({ data }) => {
     setIsVideoLoaded(true);
   };
 
+  const [age, setAge] = React.useState('');
+  const handleChange = (event) => {
+    setAge(event.target.value);
+  };
+
   return (
     <div className="containermargin">
     <div className="container">
@@ -2650,15 +2661,36 @@ const Co2 = ({ data }) => {
                       <CartesianGrid strokeDasharray="3 3" />
                       <XAxis dataKey="Year" />
                       <YAxis />
-                      <Tooltip />
-                      <Legend />
+                      <Tooltip style={{wrapperStyle: "black"}}  />
+                      <Legend/>
     
                       <Line
                         type="monotone"
-                        dataKey="Cement"
+                        dataKey=""
                         stroke={arrayData.textcolor}
                       />
                     </LineChart>
+                    <FormControl fullWidth>
+                    <InputLabel style={{color: arrayData.textcolor }} id="demo-simple-select-label">   Välj   </InputLabel>
+                        <Select
+                          labelId="demo-simple-select-label"
+                          id="demo-simple-select"
+                          value={age}
+                          label="Age"
+                          onChange={handleChange}
+                          style={{ backgroundColor: "#f5f5f5" }}
+                        >
+                          <MenuItem style={{color: "black"}} value="Cement" >Cement</MenuItem>
+                          <MenuItem style={{color: "black"}} value="Gas Flaring" >Gas Flaring</MenuItem>
+                          <MenuItem style={{color: "black"}} value="Gas Fuel">Gas Fuel</MenuItem>
+                          <MenuItem style={{color: "black"}} value="Liquid Fuel">Liquid Fuel</MenuItem>
+                          <MenuItem style={{color: "black"}} value="Solid Fuel">Solid Fuel</MenuItem>
+                          <MenuItem style={{color: "black"}} value="Per Capital">Per Capital</MenuItem>
+                          <MenuItem style={{color: "black"}} value="Total">Total</MenuItem>
+                        </Select>
+                  </FormControl>
+
+
                    <p>
                      Data: GISS Surface Temperature (GISTEMP) analys och den
                      globala komponenten av Climate at a Glance (GCAG).
