@@ -1,14 +1,17 @@
 import "./Tips.css";
 import CO2 from "../../Images/ClimateIcons/CO2.png";
+import Glacier from "../../Images/Glacier.png";
+import Bear from "../../Images/Bear.png";
 
 const Tips = () => {
   return (
+    <>
     <div className="container">
       <header>
         <h1 className="bigHeading tipsBigHeading">Enkla tips</h1>
 
         <div className="headerButtons">
-          <button className="closeButton">X</button>
+      
         </div>
       </header>
 
@@ -21,12 +24,12 @@ const Tips = () => {
           <div class="flip-card">
             <div class="flip-card-inner">
               <div class="flip-card-front flip-card-front1">
-                <p className="smallHeading tipsHeading">Undvik bilen</p>
+                <p className="smallHeading tipsHeading">Minska på köttet</p>
               </div>
               <div class="flip-card-back flip-card-back1">
                 <p>
                   Utsläpp från boskap står för 14,5% av alla växthusgaser. Genom
-                  att minska konsumtionen av kött.....
+                  att minska konsumtionen av kött så kan vi sänka den siffran.
                 </p>
               </div>
             </div>
@@ -43,7 +46,7 @@ const Tips = () => {
               <div class="flip-card-back flip-card-back2">
                 <p>
                   Cykla, gå eller använd kollektivtrafiken. Minska antalet
-                  bilresor genom att endast använda bilen....
+                  bilresor genom att endast använda bilen då ni är en större grupp. 
                 </p>
               </div>
             </div>
@@ -60,7 +63,7 @@ const Tips = () => {
               <div class="flip-card-back flip-card-back3">
                 <p>
                   Sätt upp speciella kärl för att källsortera skräp hemma och i
-                  skolan. När du källsorterar ditt skräp kan det återvinnas....
+                  skolan. När du källsorterar ditt skräp kan det återvinnas vilket är bättre för miljön.
                 </p>
               </div>
             </div>
@@ -71,13 +74,12 @@ const Tips = () => {
           <div class="flip-card">
             <div class="flip-card-inner">
               <div class="flip-card-front flip-card-front4">
-                <p className="smallHeading tipsHeading">Börja källsortera</p>
+                <p className="smallHeading tipsHeading">Spara elektrisitet</p>
                 <div className="line"></div>
               </div>
               <div class="flip-card-back flip-card-back4">
                 <p>
-                  Sätt upp speciella kärl för att källsortera skräp hemma och i
-                  skolan. När du källsorterar ditt skräp kan det återvinnas....
+                Du kan spara mycket elektricitet genom att koppla in dina prylar i ett grenuttag som du stänger av när du inte använder prylarna. Det är bra både för jorden och för din ekonomi.
                 </p>
               </div>
             </div>
@@ -88,13 +90,12 @@ const Tips = () => {
           <div class="flip-card">
             <div class="flip-card-inner">
               <div class="flip-card-front flip-card-front5">
-                <p className="smallHeading tipsHeading">Börja källsortera</p>
+                <p className="smallHeading tipsHeading">Sprid kunskap</p>
                 <div className="line"></div>
               </div>
               <div class="flip-card-back flip-card-back5">
                 <p>
-                  Sätt upp speciella kärl för att källsortera skräp hemma och i
-                  skolan. När du källsorterar ditt skräp kan det återvinnas....
+                Sprid kunskap om klimatförändringarna bland dina kompisar så de kan lära sig mer om hur vi kan bekämpa dem. Det här är avgörande för att alla ska kunna leva hållbart i framtiden.
                 </p>
               </div>
             </div>
@@ -105,13 +106,12 @@ const Tips = () => {
           <div class="flip-card">
             <div class="flip-card-inner">
               <div class="flip-card-front flip-card-front6">
-                <p className="smallHeading tipsHeading">Börja källsortera</p>
+                <p className="smallHeading tipsHeading">Lufttorka</p>
                 <div className="line"></div>
               </div>
               <div class="flip-card-back flip-card-back6">
                 <p>
-                  Sätt upp speciella kärl för att källsortera skräp hemma och i
-                  skolan. När du källsorterar ditt skräp kan det återvinnas....
+                  Låt ditt hår och dina kläder lufttorka istället för att använda hårtork, torktumlare och torkskåp.
                 </p>
               </div>
             </div>
@@ -119,6 +119,11 @@ const Tips = () => {
         </div>
       </div>
     </div>
+    <div>
+       <img className="glacier bear" src={Bear}/>
+       <img className="glacier ice" src={Glacier}/>
+       </div>
+       </>
   );
 };
 

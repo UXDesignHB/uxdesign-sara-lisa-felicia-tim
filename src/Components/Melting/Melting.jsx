@@ -374,7 +374,7 @@ const Melting = ({ data }) => {
   };
 
   return (
-    <div className="containermargin">
+
     <div className="container">
          {data
            .filter((arrayID) => arrayID.id === "1")
@@ -448,6 +448,7 @@ const Melting = ({ data }) => {
                          muted={true}
                           playsinline={true}
                          onReady={onLoadedData}
+                         width="100%"
                        />
                      </div>
                    </div>
@@ -456,7 +457,7 @@ const Melting = ({ data }) => {
              </div>
            ))}
        </div>
-       </div>
+   
   );
 };
 

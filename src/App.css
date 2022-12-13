@@ -1,5 +1,5 @@
 *{
-  color: var(--text-primary);
+  /* color: var(--text-primary); */
   margin: 0px;
   padding: 0px;
   text-decoration: none;
@@ -53,25 +53,20 @@
   z-index: 200;
 }
 
-.roundButtons{
-  padding: 10px;
-  background-color: #9DCCAF;
-  border: none;
-  margin: 0px 10px 0px 10px;
-}
-
 p {
   size: 1rem;
   color: var(--text-primary);
   font-family: 'stratos-lights', 'stratos', sans-serif;
   font-weight: 300;
-}
+} 
 
 .container {
-  max-width: 980px;
-  padding: 5rem;
+  max-width: 1024px;
+  padding-right: 5rem;
+  padding-left: 5rem;
+  padding-top: 5rem;
   margin-right: auto;
-  margin-left: auto;
+  margin-left: auto; 
 }
 
 header {
@@ -108,8 +103,6 @@ header {
 .closeButton {
   margin-left: 1rem;
 }
-
-
 
 
 /* Popup CSS  */

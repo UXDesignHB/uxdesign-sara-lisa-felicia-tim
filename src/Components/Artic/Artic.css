@@ -12,9 +12,10 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
+    width: 980px;
+    margin-left: auto;
+    margin-right: auto;
 }
-
-
 
 .video {
     width: 100%;
@@ -41,9 +42,9 @@
     align-items: center;
 }
 
-.buttonHeading {
+/* .buttonHeading {
     text-shadow: 1px 1px 2px var(--green), 0 0 1em var(--green), 0 0 0.2em var(--green);
-}
+} */
 
 /* .articButtonHeading1 {
     text-shadow: 1px 1px 2px var(--purple), 0 0 1em var(--purple), 0 0 0.2em var(--purple);
@@ -113,7 +114,6 @@
     font-size: 1.2rem;
     font-weight: 600;
     color: var(--text-primary);
-    box-shadow: 1px 1px 2px var(--green), 0 0 1em var(--green), 0 0 0.2em var(--green);;
   }
 
 .plus:before {
