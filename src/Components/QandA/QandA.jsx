@@ -1,6 +1,8 @@
 import "./QandA.css";
 import { useState } from 'react';
 import { getQuestions } from '../../QuizData.jsx';
+import Glacier from "../../Images/Glacier.png";
+import Bear from "../../Images/Bear.png";
 
 const QandA = () => {
 
@@ -31,6 +33,7 @@ const QandA = () => {
   };
 
     return ( 
+      <>
     <div className="container quizContainer">
       <header>
           <h1 className="quizHeading bigHeading">Quiz</h1>
@@ -79,6 +82,9 @@ const QandA = () => {
       )}
     </div>
   </div>
+      <img className="glacier bear" src={Bear}/>
+      <img className="glacier ice" src={Glacier}/>
+      </>
      );
 }
  

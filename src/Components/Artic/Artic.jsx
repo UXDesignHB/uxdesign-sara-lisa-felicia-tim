@@ -20,16 +20,18 @@ const Artic = () => {
         <>
   <div className="articSection">
 
-    <div className="container articVideo">
+    <div className="articVideo">
     <ReactPlayer
                       url= "https://youtu.be/H71LG6xgZII"
                       className="articYT"
-                      playing={true}
+                      playing={false}
                       // controls={true}
                     //   loop={true}
                     //   muted={true}
                       playsinline={true}
                       onReady={onLoadedData}
+                      width="100%"
+                      height="200px"
                     />
 
         <div>

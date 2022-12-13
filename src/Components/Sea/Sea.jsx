@@ -159,7 +159,7 @@ const Sea = ({ data }) => {
   };
 
   return (
-    <div className="containermargin">
+
     <div className="container">
          {data
            .filter((arrayID) => arrayID.id === "3")
@@ -185,8 +185,8 @@ const Sea = ({ data }) => {
                       <CartesianGrid strokeDasharray="3 3" />
                       <XAxis dataKey="Time" />
                       <YAxis />
-                      <Tooltip />
-                      <Legend />
+                      <Tooltip contentStyle={{ color: "#DA07F6"}} itemStyle={{ color: "red"}} wrapperStyle={{ backgroundColor: "black" }} labelStyle={{color: "black"}} />
+                      <Legend  />
     
                       <Line
                         type="monotone"
@@ -233,6 +233,7 @@ const Sea = ({ data }) => {
                          muted={true}
                           playsinline={true}
                          onReady={onLoadedData}
+                         width="100%"
                        />
                      </div>
                    </div>
@@ -241,7 +242,7 @@ const Sea = ({ data }) => {
              </div>
            ))}
        </div>
-       </div>
+
   );
 };
 

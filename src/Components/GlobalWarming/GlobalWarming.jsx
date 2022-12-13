@@ -300,7 +300,7 @@ const GlobalWarming = ({ data }) => {
   };
 
   return (
-    <div className="containermargin">
+  
  <div className="container">
       {data
         .filter((arrayID) => arrayID.id === "4")
@@ -326,7 +326,7 @@ const GlobalWarming = ({ data }) => {
                   <CartesianGrid strokeDasharray="3 3" />
                   <XAxis dataKey="Year" />
                   <YAxis />
-                  <Tooltip />
+                  <Tooltip  />
                   <Legend />
 
                   <Line
@@ -370,6 +370,8 @@ const GlobalWarming = ({ data }) => {
                       muted={true}
                        playsinline={true}
                       onReady={onLoadedData}
+                      width="100%"
+                  
                     />
                   </div>
                 </div>
@@ -378,7 +380,7 @@ const GlobalWarming = ({ data }) => {
           </div>
         ))}
     </div>
-    </div>
+  
 
    
   );

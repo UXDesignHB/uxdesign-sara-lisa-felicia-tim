@@ -3,7 +3,6 @@
 }
 
 .tipsHeading {
-  /* Vet inte hur jag har samma namn från app.css men bara ändrar bara här*/
   margin-bottom: 20px;
   margin-top: 35px;
   text-align: center;
@@ -16,17 +15,8 @@
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
   row-gap: 25px;
+  z-index: 100;
 }
-
-/* 
-.line{ 
-    height: 1px;
-    flex: 1;
-    background-color: rgb(255, 255, 255);
-    margin-bottom: 20px;
-    margin-top: 20px;
-  }
-  */
 
 .flip-card {
   background-color: transparent;
@@ -75,25 +65,25 @@
 }
 
 .flip-card-front2 {
-  background: url("../../Images/ClimateIcons/Ice.png") center no-repeat;
+  background: url("../../Images/ClimateIcons/Footprint.png") center no-repeat;
   background-size: 100px;
   border: 4px solid var(--blue);
 }
 
 .flip-card-front3 {
-  background: url("../../Images/ClimateIcons/Sun.png") center no-repeat;
-  background-size: 100px;
+  background: url("../../Images/ClimateIcons/Recycle.png") center no-repeat;
+  background-size: 80px;
   border: 4px solid var(--green);
 }
 
 .flip-card-front4 {
-  background: url("../../Images/ClimateIcons/CO2.png") center no-repeat;
-  background-size: 100px;
+  background: url("../../Images/ClimateIcons/Leaf.png") center no-repeat;
+  background-size: 70px;
   border: 4px solid var(--yellow);
 }
 
 .flip-card-front5 {
-  background: url("../../Images/ClimateIcons/Ice.png") center no-repeat;
+  background: url("../../Images/ClimateIcons/Group.png") center no-repeat;
   background-size: 100px;
   border: 4px solid var(--purple);
 }

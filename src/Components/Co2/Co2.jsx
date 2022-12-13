@@ -2635,7 +2635,7 @@ const Co2 = ({ data }) => {
   };
 
   return (
-    <div className="containermargin">
+   
     <div className="container">
          {data
            .filter((arrayID) => arrayID.id === "2")
@@ -2724,6 +2724,7 @@ const Co2 = ({ data }) => {
                          muted={true}
                           playsinline={true}
                          onReady={onLoadedData}
+                         width="100%"
                        />
                      </div>
                    </div>
@@ -2732,7 +2733,7 @@ const Co2 = ({ data }) => {
              </div>
            ))}
        </div>
-       </div>
+      
   );
 };
 
