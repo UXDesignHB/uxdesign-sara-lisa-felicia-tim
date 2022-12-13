@@ -9,13 +9,13 @@
   background-color: var(--background);
 }
 
-:root {
+[data-theme='dark'] {
   --background: #130203;
   --text-primary: #F9F5F5;
   --text-secondary-blue: #A8DAEA;
   --text-secondary-pink: #EC8394;
   --text-secondary-yellow: #F1C454;
-  --text-secondary-pruple: #B29BCA;
+  --text-secondary-pruple: #130203;
   --green: #9DCCAF;
   --blue: #A8DAEA;
   --purple: #B29BCA;
@@ -32,7 +32,7 @@
   --text-secondary-blue: #130203;
   --text-secondary-pink: #130203;
   --text-secondary-yellow: #130203;
-  --text-secondary-pruple: #130203;
+  --text-secondary-pruple: #B29BCA;
   --green: #9DCCAF;
   --blue: #A8DAEA;
   --purple: #B29BCA;
@@ -69,12 +69,12 @@ p {
   margin-left: auto; 
 }
 
-header {
+/* header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
-}
+} */
 
 .bigHeading {
   font-family: headline-gothic-atf, sans-serif;
@@ -86,13 +86,13 @@ header {
 .mediumHeading {
   font-size: 1.6rem;
   font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.25rem;
+  /* text-transform: uppercase; */
+  letter-spacing: 0.1rem;
 }
 
 .smallHeading {
   font-size: 1.2rem;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 .largeText {
