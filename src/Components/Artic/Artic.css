@@ -3,16 +3,18 @@
     display: flex;
     flex-direction: column;
     height: 75rem;
-    background-image: linear-gradient(var(--pink), var(--blue), var(--blue));
+    background-image: linear-gradient(var(--pink), var(--purple), var(--blue));
     position: relative;
     z-index: 100;
 }
 
 .articVideo {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
 }
+
+
 
 .video {
     width: 100%;
@@ -28,6 +30,10 @@
     position: relative;
 }
 
+.articButtons:nth-child(1) {
+    color: aqua;
+}
+
 .articButton {
     display: grid;
     grid-template-columns: 2rem auto;
@@ -35,7 +41,11 @@
     align-items: center;
 }
 
-.articButtonHeading1 {
+.buttonHeading {
+    text-shadow: 1px 1px 2px var(--green), 0 0 1em var(--green), 0 0 0.2em var(--green);
+}
+
+/* .articButtonHeading1 {
     text-shadow: 1px 1px 2px var(--purple), 0 0 1em var(--purple), 0 0 0.2em var(--purple);
 }
 
@@ -57,7 +67,7 @@
 
 .articButtonHeading6 {
     text-shadow: 1px 1px 2px var(--green), 0 0 1em var(--green), 0 0 0.2em var(--green);
-}
+} */
 
 
 .articParagraph {
@@ -70,7 +80,7 @@
 }
 
 .articParagraph2 {
-    color: aquamarine;
+   margin-left: 0.5rem;
 }
 
 /* .plusIcon {
@@ -96,14 +106,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1rem;
-    height: 1rem;
+    width: 1.2rem;
+    height: 1.2rem;
     border-radius: 50%;
     border: 2px solid var(--text-primary);
     font-size: 1.2rem;
     font-weight: 600;
     color: var(--text-primary);
-    text-shadow: 1px 1px 2px var(--green), 0 0 1em var(--green), 0 0 0.2em var(--green);
     box-shadow: 1px 1px 2px var(--green), 0 0 1em var(--green), 0 0 0.2em var(--green);;
   }
 

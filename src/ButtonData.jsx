@@ -6,11 +6,11 @@ export const ButtonData = [
     link: '/smaltande-glaciarer',
     color: 'articButton articButton1'
 }, {
-    heading: 'Stigande havsnivåer',
+     heading: 'Global uppvärmning',
     paragraph1: 'Lorem ipsum',
     paragrap2: 'lorem impsum',
-    link: '/stigande-havsnivaer',
-    color: 'articButton articButton2'
+    link: '/global-uppvarming',
+    color: 'articButton articButton4'
 }, {
     heading: 'CO2-utsläpp',
     paragraph1: 'Lorem ipsum',
@@ -18,11 +18,12 @@ export const ButtonData = [
     link: '/co2-utslapp',
     color: 'articButton articButton3'
 }, {
-    heading: 'Global uppvärmning',
+  
+     heading: 'Stigande havsnivåer',
     paragraph1: 'Lorem ipsum',
     paragrap2: 'lorem impsum',
-    link: '/global-uppvarming',
-    color: 'articButton articButton4'
+    link: '/stigande-havsnivaer',
+    color: 'articButton articButton2'
 }, {
     heading: 'Vad kan jag göra?',
     paragraph1: 'Lorem ipsum',

@@ -4,8 +4,16 @@ import Bear from "../../Images/Bear.png";
 import { BsArrowUp, BsParagraph, BsPlusCircle } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import { ButtonData } from '../../ButtonData';
+import ReactPlayer from "react-player";
+import { useState } from "react";
 
 const Artic = () => {
+
+    const [isVideoLoaded, setIsVideoLoaded] = useState(false);
+    const onLoadedData = () => {
+      setIsVideoLoaded(true);
+    };
+  
 
     return ( 
 
@@ -13,8 +21,19 @@ const Artic = () => {
   <div className="articSection">
 
     <div className="container articVideo">
+    <ReactPlayer
+                      url= "https://youtu.be/H71LG6xgZII"
+                      className="articYT"
+                      playing={true}
+                      // controls={true}
+                    //   loop={true}
+                    //   muted={true}
+                      playsinline={true}
+                      onReady={onLoadedData}
+                    />
+
         <div>
-            <h2 className="mediumHeading">Lorem impsum</h2>
+            <h2 className="mediumHeading">Klimatförändringarna</h2>
             <p>
             Klimatförändringar syftar på de många olika effekter som den globala uppvärmning
             har på jordens klimatsystem. Hit hör bland annat stigande havsnivåer, smältande
@@ -23,7 +42,7 @@ const Artic = () => {
             </p>
         </div>
 
-        <iframe src="https://youtu.be/H71LG6xgZII" frameborder="0" className="video"></iframe>
+  
     </div>
 
     <div className="articImage">
@@ -32,7 +51,7 @@ const Artic = () => {
         {ButtonData.map((button) => (
                 <Link to={button.link}>
                 <div className="articButton">  <div className="plus icon"></div>
-                    <h3 className="smallHeading">{button.heading}</h3><BsArrowUp className="arrowIcon"/>
+                    <h3 className="smallHeading buttonHeading">{button.heading}</h3><BsArrowUp className="arrowIcon"/>
                     <div className="articParagraph">
                         <p className="articParagraph1">{button.paragraph1}</p>
                         <sup className="articParagraph2">{button.paragrap2}</sup>

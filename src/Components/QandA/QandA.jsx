@@ -40,6 +40,7 @@ const QandA = () => {
               <button className="closeButton">X</button>
           </div> */}
       </header>
+      
       <div className="quizWrapper">
       {showScore ? (
         <div className="quizScore">
