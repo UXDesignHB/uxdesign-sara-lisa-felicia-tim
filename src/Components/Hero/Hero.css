@@ -11,6 +11,7 @@
 
 .heroHeading {
   font-size: 41.89px;
+  color: var(--text-primary);
 }
 
 /* Hämtat från https://css-tricks.com/snippets/css/typewriter-effect/ */

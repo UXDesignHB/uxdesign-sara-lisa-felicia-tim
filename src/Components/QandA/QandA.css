@@ -1,6 +1,5 @@
 .quizContainer {
-  height: calc(100vh - 80px);
-  
+  height: calc(100vh - 5rem);
 }
 
 .quizHeading {
@@ -17,7 +16,7 @@
     justify-content: space-evenly;
     padding-top: 2rem;
     /* padding-bottom: 6.2rem; */
-    z-index: 100;
+    z-index: 500;
   }
   
   .quizScore {
