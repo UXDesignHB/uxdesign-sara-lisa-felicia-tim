@@ -10,7 +10,8 @@
 }
 
 .heroHeading {
-  font-size: 41.89px;
+  font-size: 3rem;
+  font-weight: 600;
   color: var(--text-primary);
 }
 
@@ -22,13 +23,13 @@
 }
 
 .css-typing h1:nth-child(1) {
-  width: 490px;
+  width: 560px;
   animation: type 4s steps(25, end);
   animation-fill-mode: forwards;
 }
 
 .css-typing h1:nth-child(2) {
-  width: 850px;
+  width: 950px;
   opacity: 0;
   animation: type2 4s steps(25, end);
   animation-delay: 4.5s;
