@@ -14,6 +14,7 @@
     border-radius: 2px;
     animation: jumpInfinite 1.5s infinite;
     animation-delay: 9s;
+    color: var(--text-primary);
   }
   
   .down-arrow:after {

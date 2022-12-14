@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     height: 75rem;
-    background-image: linear-gradient(var(--pink), var(--purple), var(--blue));
+    background-image: linear-gradient(var(--pink), var(--purple), var(--purple));
     position: relative;
     z-index: 100;
 }
@@ -26,25 +26,20 @@
     max-width: 90vw;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 20vh 20vh;
+    grid-template-rows: 15vh 30vh;
     z-index: 100;
     position: relative;
 }
 
-.articButtons:nth-child(1) {
-    color: aqua;
-}
 
 .articButton {
     display: grid;
     grid-template-columns: 2rem auto;
     grid-template-rows: 2rem 2rem;
     align-items: center;
+    color: #130203;
 }
 
-/* .buttonHeading {
-    text-shadow: 1px 1px 2px var(--green), 0 0 1em var(--green), 0 0 0.2em var(--green);
-} */
 
 /* .articButtonHeading1 {
     text-shadow: 1px 1px 2px var(--purple), 0 0 1em var(--purple), 0 0 0.2em var(--purple);
@@ -78,6 +73,7 @@
 
 .articParagraph1 {
     text-transform: uppercase;
+    color: #130203;
 }
 
 .articParagraph2 {
@@ -110,10 +106,10 @@
     width: 1.2rem;
     height: 1.2rem;
     border-radius: 50%;
-    border: 2px solid var(--text-primary);
+    border: 2px solid #130203;
     font-size: 1.2rem;
     font-weight: 600;
-    color: var(--text-primary);
+    color: #130203;
   }
 
 .plus:before {

@@ -5,14 +5,11 @@ import Bear from "../../Images/Bear.png";
 
 const Tips = () => {
   return (
-    <>
-    <div className="container">
+    <div className="tipsSection">
+    <div className="container tipsContainer">
       <header>
         <h1 className="bigHeading tipsBigHeading">Enkla tips</h1>
 
-        <div className="headerButtons">
-      
-        </div>
       </header>
 
       <p className="mediumHeading">
@@ -74,7 +71,7 @@ const Tips = () => {
           <div class="flip-card">
             <div class="flip-card-inner">
               <div class="flip-card-front flip-card-front4">
-                <p className="smallHeading tipsHeading">Spara elektrisitet</p>
+                <p className="smallHeading tipsHeading">Spara elektricitet</p>
                 <div className="line"></div>
               </div>
               <div class="flip-card-back flip-card-back4">
@@ -119,11 +116,10 @@ const Tips = () => {
         </div>
       </div>
     </div>
-    <div>
-       <img className="glacier bear" src={Bear}/>
-       <img className="glacier ice" src={Glacier}/>
+ <div className="articFooter">    <img className="glacier bear" src={Bear}/>
+       <img className="glacier ice" src={Glacier}/></div>
+
        </div>
-       </>
   );
 };
 
