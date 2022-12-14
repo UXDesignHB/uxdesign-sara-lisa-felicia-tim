@@ -1,6 +1,5 @@
 import "./Co2.css";
 
-import Vid from "../../Images/StigandeHavsniva.mp4";
 import { useState } from "react";
 import ReactPlayer from "react-player";
 import InputLabel from "@mui/material/InputLabel";

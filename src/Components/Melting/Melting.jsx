@@ -4,6 +4,14 @@ import Vid from "../../Images/StigandeHavsniva.mp4";
 import { useState } from "react";
 import ReactPlayer from "react-player";
 
+import InputLabel from "@mui/material/InputLabel";
+import MenuItem from "@mui/material/MenuItem";
+import FormControl from "@mui/material/FormControl";
+import Select from "@mui/material/Select";
+import * as React from "react";
+
+
+
 import {
   LineChart,
   Line,
@@ -374,6 +382,12 @@ const Melting = ({ data }) => {
     setIsVideoLoaded(true);
   };
 
+  const [message1, setMessage1] = useState("");
+  const handleChange1 = (event) => {
+    setMessage1(event.target.value);
+  };
+
+
   return (
 
     <div className="container">
@@ -401,21 +415,43 @@ const Melting = ({ data }) => {
                       <CartesianGrid strokeDasharray="3 3" />
                       <XAxis dataKey="År" />
                       <YAxis />
-                      <Tooltip />
+                      <Tooltip  style={{ wrapperStyle: "black" }}  />
                       <Legend />
     
                       <Line
                         type="monotone"
-                        dataKey="Genomsnittlig kumulativ massbalans"
+                        dataKey={message1}
                         stroke={arrayData.textcolor}
                       />
     
-                      <Line
-                        type="monotone"
-                        dataKey="Antal observationer"
-                        stroke="lightblue"
-                      />
+                   
                     </LineChart>
+
+                    <FormControl fullWidth>
+                  <InputLabel
+                    style={{ color: arrayData.textcolor }}
+                    id="demo-simple-select-label"
+                  >
+                    {" "}
+                    Välj{" "}
+                  </InputLabel>
+                  <Select
+                    labelId="demo-simple-select-label"
+                    id="demo-simple-select"
+                    value={message1}
+                    label="Co2 Utsläpp"
+                    onChange={handleChange1}
+                    style={{ backgroundColor: "#f5f5f5" }}
+                  >
+                    <MenuItem style={{ color: "black" }} value="Genomsnittlig kumulativ massbalans">
+                    Genomsnittlig kumulativ massbalans
+                    </MenuItem>
+                    <MenuItem style={{ color: "black" }} value="Antal observationer">
+                    Antal observationer
+                    </MenuItem>
+          
+                  </Select>
+                </FormControl>
                    <p>
                      Data: GISS Surface Temperature (GISTEMP) analys och den
                      globala komponenten av Climate at a Glance (GCAG).
