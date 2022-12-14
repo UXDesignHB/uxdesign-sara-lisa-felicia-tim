@@ -309,7 +309,7 @@ const GlobalWarming = ({ data }) => {
             <h1 style={{ color: arrayData.textcolor }} className="bigHeading">
               {arrayData.title}{" "}
             </h1>
-            <p style={{ color: arrayData.textcolor }}>{arrayData.subtitle}</p>
+            <p className="smallHeading" style={{ color: arrayData.textcolor }}>{arrayData.subtitle}</p>
 
             <div className="popupGrid">
               <div className="topLeftGrid">
@@ -326,7 +326,7 @@ const GlobalWarming = ({ data }) => {
                   <CartesianGrid strokeDasharray="3 3" />
                   <XAxis dataKey="Year" />
                   <YAxis />
-                  <Tooltip  />
+                  <Tooltip contentStyle={{ color: "#DA07F6"}} itemStyle={{ color: "black"}} wrapperStyle={{ backgroundColor: "black" }} labelStyle={{color: "black"}}  />
                   <Legend />
 
                   <Line
