@@ -168,7 +168,7 @@ const Sea = ({ data }) => {
                <h1 style={{ color: arrayData.textcolor }} className="bigHeading">
                  {arrayData.title}{" "}
                </h1>
-               <p style={{ color: arrayData.textcolor }}>{arrayData.subtitle}</p>
+               <p className="smallHeading" style={{ color: arrayData.textcolor }}>{arrayData.subtitle}</p>
     
                <div className="popupGrid">
                  <div className="topLeftGrid">
