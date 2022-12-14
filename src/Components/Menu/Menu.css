@@ -53,7 +53,11 @@
   }
   
   .nav-text a:hover {
-    color: var(--text-secondary-blue);
+    color: var(--blue);
+  }
+
+  [data-theme='light'] .nav-text a:hover {
+    color: var(--pink);
   }
   
   .nav-menu-items {

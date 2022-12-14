@@ -1,6 +1,9 @@
+import { AiFillHome } from "react-icons/ai";
+import { IconContext } from 'react-icons';
+
 export const NavigationData = [
     {
-      title: 'Home',
+      title: <IconContext.Provider value={{ size: "1.75rem" }}><AiFillHome /></IconContext.Provider>,
       path: '/',
       cName: 'nav-text'
     },

@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { getQuestions } from '../../QuizData.jsx';
 import Glacier from "../../Images/Glacier.png";
 import Bear from "../../Images/Bear.png";
+import Confetti from 'react-confetti'
 
 const QandA = () => {
 
@@ -45,6 +46,7 @@ const QandA = () => {
         
       {showScore ? (
         <div className="quizScore">
+          <Confetti width={window.innerWidth} height={window.innerHeight}/>
           <p className="scoreText smallHeading">
             Du fick {score} av {quizArray.length} rätt
           </p>
