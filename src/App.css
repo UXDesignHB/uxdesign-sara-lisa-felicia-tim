@@ -26,8 +26,9 @@
   --pink: #EC8394;
   --yellow: #F1C454;
   --citydark: #130203;
-  --citysemidark: #130203;
-  --citybright: #48385a;
+  --citymediumdark: #130203;
+  --citysemidark: #48385a;
+  --citybright: #6b5980;
 }
 
 [data-theme='light'] {
@@ -47,6 +48,7 @@
   --pink: #EC8394;
   --yellow: #F1C454;
   --citydark: #A8DAEA; 
+  --citymediumdark: #B29BCA;
   --citysemidark: #EC8394;
   --citybright: #F1C454;
 }
@@ -85,7 +87,8 @@ p {
 } */
 
 .bigHeading {
-  font-family: headline-gothic-atf, sans-serif;
+  font-family: alternate-gothic-condensed-a, sans-serif;
+  font-weight: 700;
   font-size: 4.3rem;
   text-transform: uppercase;
   letter-spacing: 0.25rem;
