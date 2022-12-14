@@ -1,5 +1,5 @@
 .quizContainer {
-  height: calc(100vh - 5rem);
+  height: 100vh;
 }
 
 .quizHeading {
@@ -8,6 +8,7 @@
   
   .quizWrapper {
     /* background-color: #252d4a; */
+    color: var(--text-primary);
     min-height: 12.5rem;
     /* height: 15.625rem; */
     height: min-content;
@@ -64,6 +65,7 @@
   .btn {
     width: 100%;
     background-color: var(--background);
+    color: var(--text-primary);
     display: flex;
     padding: 0.8rem;
     margin-bottom: 0.5rem;
