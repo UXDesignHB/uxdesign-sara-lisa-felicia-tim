@@ -38,7 +38,7 @@ const Co2 = () => {
   };
 
   //this gets the lastname from form
-  const [message, setMessage] = useState("");
+  const [message, setMessage] = useState("Total");
   const handleChange = (event) => {
     setMessage(event.target.value);
   };
