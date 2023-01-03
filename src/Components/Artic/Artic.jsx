@@ -13,16 +13,11 @@ const Artic = () => {
     const onLoadedData = () => {
       setIsVideoLoaded(true);
     };
-  
-
     return ( 
 
         <>
   <div className="articSection">
-
     <div className="articVideo">
-
-
     <ReactPlayer
                       url= "https://youtu.be/H71LG6xgZII"
                       className="articYT"
@@ -46,11 +41,8 @@ const Artic = () => {
 
       
     </div>
-
     <div className="articImage">
         <div className="articButtons">
-
-     
                 <Link to="/smaltande-glaciarer"  className="button1">   
                 <div className="articButton">   <BsPlusCircle className="plusIcon"/>
                     <h3 className="smallHeading buttonHeading">Smältande glaciärer</h3>
@@ -61,7 +53,6 @@ const Artic = () => {
                     </div>
                 </div>
             </Link>
-            
             <Link to="/global-uppvarming"  className="button2">   
                 <div className="articButton">   <BsPlusCircle className="plusIcon"/>
                     <h3 className="smallHeading buttonHeading">Global uppvärmning</h3>

@@ -10,6 +10,7 @@ const QandA = () => {
   const quizArray = getQuestions();
 
   const [currentQuestion, setCurrentQuestion] = useState(0);
+  
   const [showScore, setShowScore] = useState(false);
   const [score, setScore] = useState(0);
 
@@ -38,8 +39,6 @@ const QandA = () => {
     <div className="container quizContainer">
       <header>
           <h1 className="quizHeading bigHeading">Quiz</h1>
-
-       
       </header> 
       
       <div className="quizWrapper">

@@ -190,7 +190,10 @@ const ThemePopup = ({ data }) => {
                     stroke="#82ca9d"
                   />
                 </LineChart>
-                <p>Data: GISS Surface Temperature (GISTEMP) analys och den globala komponenten av Climate at a Glance (GCAG).</p>
+                <p>
+                  Data: GISS Surface Temperature (GISTEMP) analys och den
+                  globala komponenten av Climate at a Glance (GCAG).
+                </p>
               </div>
               <div className="topRightGrid">
                 <p className="smallHeading">
