@@ -33,7 +33,7 @@ const GlobalWarming = () => {
 
   return (
   
- <div className="container">
+ <div className="container diagramPadding">
       {data2
         .filter((arrayID) => arrayID.id === "4")
         .map((arrayData) => (

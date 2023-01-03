@@ -29,7 +29,7 @@ const Sea = () => {
 
   return (
 
-    <div className="container">
+    <div className="container diagramPadding">
          {data2
            .filter((arrayID) => arrayID.id === "3")
            .map((arrayData) => (

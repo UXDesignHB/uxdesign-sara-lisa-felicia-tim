@@ -40,7 +40,7 @@ const Melting = () => {
   let defaultValue = "Antal observationer";
 
   return (
-    <div className="container">
+    <div className="container diagramPadding">
       {data2
         .filter((arrayID) => arrayID.id === "1")
         .map((arrayData) => (
