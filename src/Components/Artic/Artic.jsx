@@ -1,5 +1,5 @@
 import "./Artic.css";
-import Glacier from "../../Images/Glacier.png";
+import Glacier from "../../Images/Glacier1.png";
 import Bear from "../../Images/Bear.png";
 import { Link } from "react-router-dom";
 import ReactPlayer from "react-player";
@@ -37,7 +37,7 @@ const Artic = () => {
                     />
             <p className="largeText">
             Klimatförändringar syftar på de många olika effekter som den globala uppvärmning
-            har på jordens klimatsystem. Bland annat stigande havsnivåer, smältande
+            har på jordens klimatsystem. Detta bidrar till bland annat stigande havsnivåer, smältande
             glaciärer, förändrade regnmönster och CO2-utsläpp från fossila bränslen. Läs mer
             om hur det påverkar vår jord och hur du kan göra skillnad.
             </p>
@@ -115,7 +115,7 @@ const Artic = () => {
 
          
         </div>
-        <img className="glacier bear" src={Bear}/>
+        {/* <img className="glacier bear" src={Bear}/> */}
         <img className="glacier ice" src={Glacier}/>
     </div>
 </div>
