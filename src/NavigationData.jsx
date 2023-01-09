@@ -33,7 +33,7 @@ export const NavigationData = [
       cName: 'nav-text'
     },
     {
-        title: 'Vad kan jag om klimatförändringarna?',
+        title: 'Quiz',
         path: '/fragor',
         cName: 'nav-text'
     }
