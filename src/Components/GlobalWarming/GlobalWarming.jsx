@@ -38,15 +38,15 @@ const GlobalWarming = () => {
         .filter((arrayID) => arrayID.id === "4")
         .map((arrayData) => (
           <div key={arrayData.title}>
-            <h1 style={{ color: arrayData.textcolor }} className="bigHeading">
+            <h1 style={{ color: arrayData.headingcolor }} className="bigHeading">
               {arrayData.title}{" "}
             </h1>
-            <p className="smallHeading" style={{ color: arrayData.textcolor }}>{arrayData.subtitle}</p>
+            <p className="smallHeading diagramHeading" style={{ color: arrayData.textcolor }}>{arrayData.subtitle}</p>
 
             <div className="popupGrid">
               <div className="topLeftGrid">
                 <LineChart
-                  width={980}
+                  width={1024}
                   height={400}
                   data={tempdata2}
                   margin={{
@@ -69,10 +69,7 @@ const GlobalWarming = () => {
 
                  
                 </LineChart>
-                <p>
-                  Data: GISS Surface Temperature (GISTEMP) analys och den
-                  globala komponenten av Climate at a Glance (GCAG).
-                </p>
+      
               </div>
             
               <div className="bottomLeftGrid">
@@ -102,6 +99,9 @@ const GlobalWarming = () => {
                 </div>
               </div>
             </div>
+            <p>
+            {arrayData.dataSource}
+                </p>
           </div>
         ))}
     </div>

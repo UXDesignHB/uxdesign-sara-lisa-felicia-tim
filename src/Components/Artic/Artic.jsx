@@ -44,17 +44,22 @@ const Artic = () => {
     <div className="articImage">
         <div className="articButtons">
                 <Link to="/smaltande-glaciarer"  className="button1">   
-                <div className="articButton">   <BsPlusCircle className="plusIcon"/>
+                {/* <div className="articButton">   <BsPlusCircle className="plusIcon"/>
                     <h3 className="smallHeading buttonHeading">Smältande glaciärer</h3>
                     <BsArrowDown className="arrowIcon"/>
                     <div className="articParagraph">
                         <p className="articParagraph1">-28 cm</p>
                         <sup className="articParagraph2">sedan år 1945</sup>
                     </div>
-                </div>
+                </div> */}
+          
+  <button class="button b1 smallHeading"> + </button>
+
+
             </Link>
-            <Link to="/global-uppvarming"  className="button2">   
-                <div className="articButton">   <BsPlusCircle className="plusIcon"/>
+
+            <Link to="/co2-utslapp"  className="button2">   
+                {/* <div className="articButton">   <BsPlusCircle className="plusIcon"/>
                     <h3 className="smallHeading buttonHeading">Global uppvärmning</h3>
                     <BsArrowUp className="arrowIcon"/>
                     <div className="articParagraph">
@@ -62,43 +67,61 @@ const Artic = () => {
                         <sup className="articParagraph2">sedan år 1880</sup>
                     </div>
             
-                </div>
+                </div> */}
+           
+  <button class="button b2 smallHeading"> + </button>
+
+
             </Link>
 
-            <Link to="/co2-utslapp"  className="button3">   
-                <div className="articButton">  <BsPlusCircle className="plusIcon"/>
+            <Link to="/global-uppvarming"  className="button3">   
+                {/* <div className="articButton">  <BsPlusCircle className="plusIcon"/>
                     <h3 className="smallHeading buttonHeading">CO2-utsläpp</h3>
                     <BsArrowUp className="arrowIcon"/>
                     <div className="articParagraph">
                         <p className="articParagraph1">9167 ton</p>
                         <sup className="articParagraph2">sedan år 1760</sup>
                     </div>
-                </div>
+                </div> */}
+     
+  <button class="button b3 smallHeading"> + </button>
+
+
             </Link>
 
-            <Link to="/stigande-havsnivaer"  className="button4">   
-                <div className="articButton">   <BsPlusCircle className="plusIcon"/>
+            <Link to="/fragor "  className="button4">   
+                {/* <div className="articButton">   <BsPlusCircle className="plusIcon"/>
                     <h3 className="smallHeading buttonHeading">Stigande havsnivåer</h3>
                     <BsArrowUp className="arrowIcon"/>
                     <div className="articParagraph">
                         <p className="articParagraph1">0.7 m</p>
                         <sup className="articParagraph2">sedan år 1880</sup>
                     </div>
-                </div>
+                </div> */}
+                
+  <button class="button b4 smallHeading"> + </button>
+
             </Link>
 
-            <Link to="/fragor"  className="button5">   
-                <div className="articButton">  <BsQuestionCircle className="plusIcon"/>
+            <Link to="/stigande-havsnivaer"  className="button5">   
+                {/* <div className="articButton">  <BsQuestionCircle className="plusIcon"/>
                     <h3 className="smallHeading buttonHeading">Vad vet jag om klimatförändringarna?</h3>
           
-                </div>
+                </div> */}
+
+  <button class="button b5 smallHeading"> + </button>
+
+
             </Link>
 
             <Link to="/tips" className="button6">   
-                <div className="articButton">   <BsEmojiSmile className="plusIcon"/>
+                {/* <div className="articButton">   <BsEmojiSmile className="plusIcon"/>
                     <h3 className="smallHeading buttonHeading">Vad kan jag göra?</h3>
                   
-                </div>
+                </div> */}
+               
+  <button class="button b6 smallHeading">+</button>
+
             </Link>
 
       

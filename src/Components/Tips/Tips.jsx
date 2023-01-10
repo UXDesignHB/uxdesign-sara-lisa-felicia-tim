@@ -1,6 +1,6 @@
 import "./Tips.css";
 import CO2 from "../../Images/ClimateIcons/CO2.png";
-import Glacier from "../../Images/Glacier.png";
+import Glacier from "../../Images/Glacier1.png";
 import Bear from "../../Images/Bear.png";
 
 const Tips = () => {
@@ -116,8 +116,8 @@ const Tips = () => {
         </div>
       </div>
     </div>
- <div className="articFooter">    <img className="glacier bear" src={Bear}/>
-       <img className="glacier ice" src={Glacier}/></div>
+ <div className="articFooter">     <img className="glacier ice" src={Glacier}/>
+ </div>
 
        </div>
   );

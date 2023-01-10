@@ -1,7 +1,7 @@
 import "./QandA.css";
 import { useState } from 'react';
 import { getQuestions } from '../../QuizData.jsx';
-import Glacier from "../../Images/Glacier.png";
+import Glacier from "../../Images/Glacier1.png";
 import Bear from "../../Images/Bear.png";
 import Confetti from 'react-confetti'
 
@@ -81,8 +81,7 @@ const QandA = () => {
       )}
     </div>
     </div>
-      <img className="glacier bear" src={Bear}/>
-      <img className="glacier ice" src={Glacier}/>
+    <img className="glacier ice quizGlacier" src={Glacier}/>
   
 </>
      );

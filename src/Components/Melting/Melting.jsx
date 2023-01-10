@@ -45,44 +45,13 @@ const Melting = () => {
         .filter((arrayID) => arrayID.id === "1")
         .map((arrayData) => (
           <div key={arrayData.title}>
-            <h1 style={{ color: arrayData.textcolor }} className="bigHeading">
+            <h1 style={{ color: arrayData.headingcolor }} className="bigHeading">
               {arrayData.title}{" "}
             </h1>
-            <p className="smallHeading" style={{ color: arrayData.textcolor }}>
+            <p className="smallHeading diagramHeading" style={{ color: arrayData.textcolor }}>
               {arrayData.subtitle}
             </p>
-
-            <div className="popupGrid">
-              <div className="topLeftGrid">
-                <LineChart
-                  width={980}
-                  height={400}
-                  data={meltingdata2}
-                  margin={{
-                    top: 5,
-                    bottom: 5,
-                    left: -15,
-                  }}
-                >
-                  <CartesianGrid strokeDasharray="3 3" />
-                  <XAxis dataKey="År" />
-                  <YAxis />
-                  <Tooltip
-                    contentStyle={{ color: "#DA07F6" }}
-                    itemStyle={{ color: "black" }}
-                    wrapperStyle={{ backgroundColor: "black" }}
-                    labelStyle={{ color: "black" }}
-                  />
-                  <Legend />
-
-                  <Line
-                    type="monotone"
-                    dataKey={message1}
-                    stroke={arrayData.textcolor}
-                  />
-                </LineChart>
-
-                <FormControl fullWidth>
+            <FormControl className="form">
                   <InputLabel
                     style={{ color: arrayData.textcolor }}
                     id="demo-simple-select-label"
@@ -117,10 +86,36 @@ const Melting = () => {
                     htmlFor="uncontrolled-native"
                   ></InputLabel>
                 </FormControl>
-                <p>
-                  Data: GISS Surface Temperature (GISTEMP) analys och den
-                  globala komponenten av Climate at a Glance (GCAG).
-                </p>
+            <div className="popupGrid">
+              <div className="topLeftGrid">
+                <LineChart
+                  width={1024}
+                  height={400}
+                  data={meltingdata2}
+                  margin={{
+                    top: 5,
+                    bottom: 5,
+                    left: -15,
+                  }}
+                >
+                  <CartesianGrid strokeDasharray="3 3" />
+                  <XAxis dataKey="År" />
+                  <YAxis />
+                  <Tooltip
+                    contentStyle={{ color: "#DA07F6" }}
+                    itemStyle={{ color: "black" }}
+                    wrapperStyle={{ backgroundColor: "black" }}
+                    labelStyle={{ color: "black" }}
+                  />
+                  <Legend />
+
+                  <Line
+                    type="monotone"
+                    dataKey={message1}
+                    stroke={arrayData.textcolor}
+                  />
+                </LineChart>
+
               </div>
 
               <div className="bottomLeftGrid">
@@ -148,6 +143,11 @@ const Melting = () => {
                 </div>
               </div>
             </div>
+            
+          
+            <p>
+            {arrayData.dataSource}
+                </p>
           </div>
         ))}
     </div>
