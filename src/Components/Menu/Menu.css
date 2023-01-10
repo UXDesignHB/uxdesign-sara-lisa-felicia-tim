@@ -55,8 +55,14 @@
   .nav-text a:hover {
     color: var(--blue);
   }
-
   [data-theme='light'] .nav-text a:hover {
+    color: var(--pink);
+  }
+
+  .nav-text a.active {
+    color: var(--blue);
+  }
+  [data-theme='light'] .nav-text a.active {
     color: var(--pink);
   }
   
