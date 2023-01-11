@@ -1,3 +1,6 @@
+//Nedan kod fungerar på samma vis som filen Co2.jsx som har blivit utförligt kommenterad steg för steg.
+//För att inte behöva sitta och bara kopiera över kommenrarer så hänvisar vi till den sidan för kodkommentarer samt att denna information även skrivits in i kodrapporten. 
+
 import "./Sea.css";
 import "../ThemePopup/ThemePopup.css"
 import { getSeaData2 } from '../../DiagramData';
@@ -40,7 +43,7 @@ const Sea = () => {
                <p className="smallHeading diagramHeading" style={{ color: arrayData.textcolor }}>{arrayData.subtitle}</p>
     
                <div className="popupGrid">
-                 <div className="topLeftGrid">
+                 <div className="topLeftGrid"> 
                  <LineChart
                       width={1024}
                       height={400}

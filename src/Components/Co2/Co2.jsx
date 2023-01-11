@@ -1,20 +1,24 @@
+//Importerar css
 import "./Co2.css";
+//Importerar css från ThemePopup
 import "../ThemePopup/ThemePopup.css"
-
+//Importerar CO2 datan från DiagramData till diagram
 import { getCo2Data2 } from '../../DiagramData';
+//Importerar datan för texterna från DiagramData till diagram
 import { getInformationData } from '../../DiagramData';
-
-
-
-
+//useState används till videospelaren
 import { useState } from "react";
+//npm paket som importeras för att visa videoklipp
 import ReactPlayer from "react-player";
+//Importerar för input select från MUI
 import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
+//Importerar react
 import * as React from "react";
 
+//Importerar från rechart för diagrammen. 
 import {
   LineChart,
   Line,
@@ -24,26 +28,25 @@ import {
   Tooltip,
   Legend,
 } from "recharts";
-import { color } from "@mui/system";
-
 
 const Co2 = () => {
-
+  //Här hämtas datan från import genom en const
   const co2Data2 = getCo2Data2();
   const data2 = getInformationData();
-
+  //Här sätts state för video
   const [isVideoLoaded, setIsVideoLoaded] = useState(false);
   const onLoadedData = () => {
     setIsVideoLoaded(true);
   };
 
-  //this gets the lastname from form
+  //Här kommer onChange från input select in för att välja vilken data som skall visas i diagrammen.
   const [message, setMessage] = useState("Total");
   const handleChange = (event) => {
     setMessage(event.target.value);
   };
 
   return (
+    //nedan hämtas datan från Diagramdata.jsx och filtreras baserat på ID. Här skrivs informationen på sidan ut.
     <div className="container diagramPadding">
       {data2
         .filter((arrayID) => arrayID.id === "2")
@@ -53,6 +56,8 @@ const Co2 = () => {
               {arrayData.title}{" "}
             </h1>
             <p className="smallHeading diagramHeading" style={{ color: arrayData.textcolor }}>{arrayData.subtitle}</p>
+
+            {/* Nedan ligger input selecten som används för att välja vilken data som visas i diagrammen. Detta görs genom en onChange funktion som ändrar värdet i diagrammet.  */}
             <FormControl className="form">
                   <InputLabel
                     style={{ color: arrayData.textcolor }}
@@ -92,6 +97,8 @@ const Co2 = () => {
 
             <div className="popupGrid">
               <div className="topLeftGrid">
+
+                {/* Nedan finns diagrammet. Datan kommer från json filen som ligger i Diagramdata och vilken av datan som visas görs genom input select ovan */}
                 <LineChart
                   width={1024}
                   height={400}
@@ -130,6 +137,7 @@ const Co2 = () => {
               <div className="bottomRightGrid">
                 <div className="vidcontainer">
                   <div>
+                    {/* Här används npm paketet ReactPlayer för att spela upp loopade videoklipp från ett youtube klipp*/}
                     <ReactPlayer
                       url="https://youtu.be/AyszFPGbu2s"
                       playing={true}
