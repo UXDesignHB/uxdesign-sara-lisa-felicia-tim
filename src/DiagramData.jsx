@@ -1,7 +1,9 @@
+//I denna fil så samlas all data för att sedan genom .map skrivas ut och filtreras i applikationen. 
+//Datan som finns är 4 olika json filer för diagrammen och sen längst ner ligger en arraydata som används för att skriva ut texten i diagrammen. 
+
 export function getMeltingData2() {
     return meltingdata2;
   }
-  
   const meltingdata2 = [
     {
       "Genomsnittlig kumulativ massbalans": 0.0,
@@ -355,11 +357,10 @@ export function getMeltingData2() {
       },
     ];
 
-
-    export function getGlobalTempData2() {
+export function getGlobalTempData2() {
       return tempdata2;
     }
-    const tempdata2 = [
+  const tempdata2 = [
       { "Medeltemperatur": -0.2, "Source": "GISTEMP", "Year": 1880 },
       { "Medeltemperatur": -0.1148, "Source": "GCAG", "Year": 1880 },
       { "Medeltemperatur": -0.12, "Source": "GISTEMP", "Year": 1881 },
@@ -636,8 +637,7 @@ export function getMeltingData2() {
       { "Medeltemperatur": 0.9363, "Source": "GCAG", "Year": 2016 }
     ];
 
-
-    export function getSeaData2() {
+export function getSeaData2() {
       return seadata2;
     }
     const seadata2 = [
@@ -777,12 +777,10 @@ export function getMeltingData2() {
       { "Global medel havsnivå": 67.7, "Global medel havsnivå uncertainty": 8.9, "Time": "2013-03-15" }
       ];
 
-
-      export function getCo2Data2() {
+export function getCo2Data2() {
         return co2Data2;
       }
-
-      const co2Data2 = [
+    const co2Data2 = [
         {
           Cement: 0.0,
           "Gas Flaring": 0.0,
@@ -2194,20 +2192,16 @@ export function getMeltingData2() {
           Year: 2010,
         },
       ];
-      
 
-
-      export function getInformationData() {
+export function getInformationData() {
         return data2;
       }
 
-
-      //Här samlas all da
 const data2 = [
   {
     id: "1",
     title: "Smältande Glaciärer",
-    subtitle: "MÄNGD SMÄLT GLACIÄR (1948-2014)",
+    subtitle: "MÄNGD SMÄLT GLACIÄR (1946-2014)",
     graphtitle: "NU ÄR DET VARMARE ÄN NÅGONSIN",
     headingcolor: "var(--pink)",
     textcolor: "var(--meltingpink)",
@@ -2229,7 +2223,7 @@ const data2 = [
   {
     id: "3",
     title: "Stigande havsnivåer",
-    subtitle: "TEMPERATURFÖRÄNDRINGAR (1880-2016)", 
+    subtitle: "HAVSNIVÅRER (1880-2013)", 
     graphtitle: "NU ÄR DET VARMARE ÄN NÅGONSIN",
     headingcolor: "var(--blue)",
     textcolor: "var(--seablue)",
@@ -2240,7 +2234,7 @@ const data2 = [
   {
     id: "4",
     title: "Global uppvärming",
-    subtitle: "MEDELTEMPERATUR (1886-2016)",
+    subtitle: "MEDELTEMPERATUR (1880-2016)",
     graphtitle: "NU ÄR DET VARMARE ÄN NÅGONSIN",
     headingcolor: "var(--yellow)",
     textcolor: "var(--globalyellow)",

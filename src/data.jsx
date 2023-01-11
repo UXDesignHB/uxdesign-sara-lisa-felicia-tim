@@ -1,4 +1,4 @@
-
+//Denna skall tas bort. 
 
 const data = [
     {

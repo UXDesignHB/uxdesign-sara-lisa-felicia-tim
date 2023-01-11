@@ -1,5 +1,8 @@
+//Importerar CSS för hela projektet. Här ligger css som används av flera komponenter
 import './App.css';
-import { Link, Route, Routes } from "react-router-dom";
+//Import av React router
+import { Route, Routes } from "react-router-dom";
+//Nedan importeras för routingen
 import Homepage from "./Components/Homepage/Homepage";
 import Tips from "./Components/Tips/Tips";
 import QandA from "./Components/QandA/QandA";
@@ -15,7 +18,7 @@ import Switch from '@mui/material/Switch';
 // import Stack from '@mui/material/Stack';
 // import Typography from '@mui/material/Typography';
 
-
+//Nedan importeras för routingen
 import Co2 from './Components/Co2/Co2';
 import Melting from './Components/Melting/Melting';
 import GlobalWarming from "./Components/GlobalWarming/GlobalWarming"
@@ -92,7 +95,7 @@ setTheme(newTheme);
       />
     
   </div>
-
+      {/* Här sköts hela navigeringen på webbplatsen genom react router.  */}
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/tips" element={<Tips />} />
