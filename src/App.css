@@ -126,3 +126,21 @@ p {
 .containermargin{
   padding: 200px 0px 400px 0px;
 }
+
+.diagramPadding{
+  padding: 5rem 0px;
+    height: 100%;
+  }
+
+  .form {
+    width: 20rem;
+  }
+
+  .popupGrid{
+    margin-top: 2rem;
+  }
+
+  .diagramHeading {
+    margin-bottom: 1rem;
+  }
+

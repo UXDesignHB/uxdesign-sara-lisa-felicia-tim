@@ -120,3 +120,7 @@
   .btn:focus {
     outline: none;
   }
+
+  .quizGlacier {
+    margin-top: 20%;
+  }

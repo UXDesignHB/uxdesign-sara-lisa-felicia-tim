@@ -26,14 +26,13 @@
     max-width: 90vw;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 15vh 40vh;
+    grid-template-rows: 10vh 30vh;
     z-index: 100;
     position: relative;
     align-items: flex-end;
 }
 
-
-.articButton {
+/* .articButton {
     display: grid;
     grid-template-columns: 2rem auto;
     grid-template-rows: 2rem 2rem;
@@ -55,7 +54,7 @@
 
 .button1 .plusIcon, .button1 .arrowIcon, .button1 h3, .button1 p, .button1 sup {
     color: #130203;
-} 
+}  */
 
 /* .button2  {
     margin-bottom: 4rem;
@@ -71,10 +70,10 @@
     margin-bottom: 1.5rem;
 } */
 
-
+/* 
 .plusIcon {
     font-size: 1.2rem;
-}
+} */
 
 /* .articButtonHeading1 {
     text-shadow: 1px 1px 2px var(--purple), 0 0 1em var(--purple), 0 0 0.2em var(--purple);
@@ -100,7 +99,6 @@
     text-shadow: 1px 1px 2px var(--green), 0 0 1em var(--green), 0 0 0.2em var(--green);
 } */
 
-
 .articParagraph {
     display: flex;
     flex-direction: row;
@@ -113,10 +111,9 @@
 }
 
 .articParagraph2 {
-   margin-left: 0.5rem;
-   font-size: 0.9rem;
+    margin-left: 0.5rem;
+    font-size: 0.9rem;
 }
-
 
 .arrowIcon {
     font-size: 1.5rem;
@@ -147,13 +144,149 @@
     bottom: 6rem;
 }
 
-
 /* @keyframes articbear {
     0%   {left: 0px; top: 0px;}
     100%  {left: 100px; top: 0px;}
   }
  */
-
+/* 
 .ice {
     z-index: 0;
+} */
+
+/* .wrap {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+   */
+
+.button {
+    min-width: 3.5rem;
+    min-height: 3.5rem;
+    border: none;
+    border-radius: 1000px;
+    box-shadow: 0 5px 10px gray;
+    background: rgb(244, 244, 244);
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    padding: 10px;
+    text-align: center;
+}
+
+.b1 {
+    margin: 2rem 0;
+}
+
+.b2 {
+    left: 50%;
+}
+
+.b3 {
+    margin: 7rem 0;
+    left: 65%;
+}
+
+.b4 {
+    margin: 4rem 7rem;
+}
+
+.b5 {
+    margin: 2rem 7rem;
+}
+
+.b6 {
+    margin: 1rem 0;
+    left: 85%;
+}
+
+button::before {
+    border-radius: 1000px;
+    min-width: calc(10rem + 0.5rem);
+    min-height: calc(3.5rem - 2rem);
+    box-shadow: 0 5px 15px white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all 0.3s ease-in-out 0s;
+    padding: 1rem;
+}
+
+.button1 button::before {
+    content: 'Smältande glaciärer';
+    background: var(--purple);
+}
+
+.button2 button::before {
+    content: 'CO2';
+    background: var(--yellow);
+}
+
+.button3 button::before {
+    content: 'Global uppvärmning';
+    background: var(--pink);
+}
+
+.button4 button::before {
+    content: 'Quiz';
+    background: var(--green);
+}
+
+.button5 button::before {
+    content: 'Stigande havsnivåer';
+    background: var(--blue);
+}
+
+.button6 button::before {
+    content: 'Vad kan jag göra?';
+    background: var(--green);
+}
+
+.button:focus,
+.button:hover {
+    color: #313133;
+    transform: translateY(-6px);
+}
+
+button:focus::before,
+button:hover::before {
+    opacity: 1;
+}
+
+button::after {
+    content: '';
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border: 10px solid white;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: ring 1.5s 10;
+}
+
+button:focus::after,
+button:hover::after {
+    animation: none;
+    display: none;
+}
+
+@keyframes ring {
+    0% {
+        width: 20px;
+        height: 20px;
+        opacity: 1;
+    }
+    100% {
+        width: 65px;
+        height: 65px;
+        opacity: 0;
+    }
 }

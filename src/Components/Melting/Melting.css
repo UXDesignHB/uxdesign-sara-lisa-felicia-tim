@@ -3,9 +3,3 @@
   height: 400px;
   position: relative;
 }
-
-
-.diagramPadding{
-  padding: 162px 0px 0px 0px;
-  height: calc(100vh - 162px);
-}
