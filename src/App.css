@@ -140,9 +140,18 @@ p {
 /* Extra margin på top */
   .popupGrid{
     margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
   }
   /* Extra margin på diagrammets heading */
   .diagramHeading {
     margin-bottom: 1rem;
   }
 
+
+/* sätta vart grid startar och slutar */
+.topLeftGrid{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
