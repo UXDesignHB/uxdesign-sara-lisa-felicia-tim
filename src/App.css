@@ -123,23 +123,25 @@ p {
   gap: 50px;
 }
 
+/* Extra margin på diagramsidorna */
 .containermargin{
   padding: 200px 0px 400px 0px;
 }
 
+/* För att täcka hela skärmen med bakgrund */
 .diagramPadding{
   padding: 5rem 0px;
     height: 100%;
   }
-
+/* bredd på select input */
   .form {
     width: 20rem;
   }
-
+/* Extra margin på top */
   .popupGrid{
     margin-top: 2rem;
   }
-
+  /* Extra margin på diagrammets heading */
   .diagramHeading {
     margin-bottom: 1rem;
   }

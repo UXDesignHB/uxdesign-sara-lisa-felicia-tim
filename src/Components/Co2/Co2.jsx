@@ -1,5 +1,3 @@
-//Importerar css
-import "./Co2.css";
 //Importerar css från ThemePopup
 import "../ThemePopup/ThemePopup.css"
 //Importerar CO2 datan från DiagramData till diagram
