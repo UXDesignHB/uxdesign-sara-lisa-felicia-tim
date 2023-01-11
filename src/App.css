@@ -1,5 +1,4 @@
 *{
-  /* color: var(--text-primary); */
   margin: 0px;
   padding: 0px;
   text-decoration: none;
@@ -79,13 +78,6 @@ p {
   margin-left: auto; 
 }
 
-/* header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-} */
-
 .bigHeading {
   font-family: alternate-gothic-condensed-a, sans-serif;
   font-weight: 700;
@@ -97,13 +89,11 @@ p {
 .mediumHeading {
   font-size: 1.6rem;
   font-weight: 600;
-  /* text-transform: uppercase; */
   letter-spacing: 0.1rem;
 }
 
 .smallHeading {
   font-size: 1.2rem;
-  /* text-transform: uppercase; */
 }
 
 .largeText {

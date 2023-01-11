@@ -3,22 +3,34 @@ import Hero from "../Hero/Hero";
 import Storyline from "../Storyline/Storyline";
 import City from "../City/City";
 import Artic from "../Artic/Artic";
+import { Link } from "react-router-dom";
 
+// Homepage är applikationens startsida och innehåller komponenterna Hero, Storyline, City och Artic.
 const Homepage = () => {
     return (
     <>
+
+    {/* Animerad pil som har en länk till Artic-komponenten */}
+    <Link to="/artic">
         <div className="arrow"><div className="down-arrow "></div></div>
+    </Link>
+     
+    <Hero/>
 
-        <Hero/>
+    <div className="citySection">
 
-        <div className="citySection">
-        <div id="stars3"></div>
-        <div id="stars4"></div>
-        <div id="stars5"></div>
-        <Storyline/>
-        <City/>
-        </div>
-        <Artic/>
+    {/* Element med animerade stjärnor */}
+    <div id="stars3"></div>
+    <div id="stars4"></div>
+
+    <Storyline/>
+
+    <City/>
+
+    </div>
+
+    <Artic/>
+
     </>
     );
 }

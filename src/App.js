@@ -1,26 +1,22 @@
 import './App.css';
-import { Link, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
+// Liknar useState men första argumentet är nyckeln till värdet i lokal lagring.
+import useLocalStorage from 'use-local-storage'
+import { styled } from '@mui/material/styles';
+import FormControlLabel from '@mui/material/FormControlLabel';
+import Switch from '@mui/material/Switch';
 import Homepage from "./Components/Homepage/Homepage";
 import Tips from "./Components/Tips/Tips";
 import QandA from "./Components/QandA/QandA";
-import Diagram from './Components/Diagram/Diagram';
 import Menu from "./Components/Menu/Menu";
-
-import useLocalStorage from 'use-local-storage'
-
-import { styled } from '@mui/material/styles';
-// import FormGroup from '@mui/material/FormGroup';
-import FormControlLabel from '@mui/material/FormControlLabel';
-import Switch from '@mui/material/Switch';
-// import Stack from '@mui/material/Stack';
-// import Typography from '@mui/material/Typography';
-
-
 import Co2 from './Components/Co2/Co2';
 import Melting from './Components/Melting/Melting';
 import GlobalWarming from "./Components/GlobalWarming/GlobalWarming"
 import Sea from './Components/Sea/Sea';
+import Artic from './Components/Artic/Artic';
 
+
+// Stylar och anpassar dark mode-switch toggle 
 const MaterialUISwitch = styled(Switch)(({ theme }) => ({
   width: 62,
   height: 34,
@@ -71,6 +67,7 @@ const MaterialUISwitch = styled(Switch)(({ theme }) => ({
 
 function App() {
 
+// Definierar funktion för dark mode-switch toggle 
 const defaultDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 const [theme, setTheme] = useLocalStorage('theme', defaultDark ? 'dark' : 'light');
 const switchTheme = () => {
@@ -84,9 +81,9 @@ setTheme(newTheme);
   <div className='appNavBar'>
   <Menu/>
 
+  {/* Swtich toogle hämtad från MUI som används för att ändra mellan ljust- och mörkt läge i applikationen */}
   <FormControlLabel
         control={<MaterialUISwitch sx={{ m: 1 }} defaultChecked />}
-        // label="MUI switch"
         onClick={switchTheme} 
         title="Dark mode"
       />
@@ -101,7 +98,7 @@ setTheme(newTheme);
         <Route path="/stigande-havsnivaer" element={ <Sea /> } />
         <Route path="/co2-utslapp" element={ <Co2  /> } />
         <Route path="/global-uppvarming" element={ <GlobalWarming /> } />
-        <Route path="/diagram" element={<Diagram/>} />
+        <Route path="/artic" element={<Artic/>} />
       </Routes>
   
     </div>

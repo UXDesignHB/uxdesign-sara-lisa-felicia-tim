@@ -6,6 +6,7 @@
     background-image: linear-gradient(var(--citybright), var(--citysemidark), var(--citymediumdark), var(--citymediumdark), var(--citymediumdark));
     position: relative;
     z-index: 100;
+    padding-top: 5rem;
 }
 
 .articVideo {
@@ -32,73 +33,6 @@
     align-items: flex-end;
 }
 
-/* .articButton {
-    display: grid;
-    grid-template-columns: 2rem auto;
-    grid-template-rows: 2rem 2rem;
-    align-items: center;
-    color: var(--text-primary);
-}
-
-.articButton h3:hover  {
-    text-shadow:
-    0 0 10px #fff,
-    0 0 20px #fff,
-    0 0 40px var(--pink),
-    0 0 80px var(--pink),
-    0 0 90px var(--pink),
-    0 0 100px var(--pink),
-    0 0 150px var(--pink);
-} 
-
-
-.button1 .plusIcon, .button1 .arrowIcon, .button1 h3, .button1 p, .button1 sup {
-    color: #130203;
-}  */
-
-/* .button2  {
-    margin-bottom: 4rem;
-}
-
-
-.button3 {
-    margin-left: -3rem;
-}
-
-
-.button5 {
-    margin-bottom: 1.5rem;
-} */
-
-/* 
-.plusIcon {
-    font-size: 1.2rem;
-} */
-
-/* .articButtonHeading1 {
-    text-shadow: 1px 1px 2px var(--purple), 0 0 1em var(--purple), 0 0 0.2em var(--purple);
-}
-
-.articButtonHeading2{
-    text-shadow: 1px 1px 2px var(--pink), 0 0 1em var(--pink), 0 0 0.2em var(--pink);
-}
-
-.articButtonHeading3 {
-    text-shadow: 1px 1px 2px var(--blue), 0 0 1em var(--blue), 0 0 0.2em var(--blue);
-}
-
-.articButtonHeading4 {
-    text-shadow: 1px 1px 2px var(--yellow), 0 0 1em var(--yellow), 0 0 0.2em var(--yellow);
-}
-
-.articButtonHeading5 {
-    text-shadow: 1px 1px 2px var(--green), 0 0 1em var(--green), 0 0 0.2em var(--green);
-}
-
-.articButtonHeading6 {
-    text-shadow: 1px 1px 2px var(--green), 0 0 1em var(--green), 0 0 0.2em var(--green);
-} */
-
 .articParagraph {
     display: flex;
     flex-direction: row;
@@ -115,10 +49,6 @@
     font-size: 0.9rem;
 }
 
-.arrowIcon {
-    font-size: 1.5rem;
-}
-
 .articImage {
     width: 100vw;
     position: absolute;
@@ -130,37 +60,6 @@
     position: absolute;
     bottom: 0;
 }
-
-.bear {
-    z-index: 10;
-    position: absolute;
-    /* animation: articbear;
-    animation-duration: 3s;
-    animation-iteration-count: 2;
-    animation-timing-function: ease-in;
-    animation-direction: alternate; */
-    width: 400px;
-    right: 12rem;
-    bottom: 6rem;
-}
-
-/* @keyframes articbear {
-    0%   {left: 0px; top: 0px;}
-    100%  {left: 100px; top: 0px;}
-  }
- */
-/* 
-.ice {
-    z-index: 0;
-} */
-
-/* .wrap {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-   */
 
 .button {
     min-width: 3.5rem;
