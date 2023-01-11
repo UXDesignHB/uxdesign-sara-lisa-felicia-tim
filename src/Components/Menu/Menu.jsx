@@ -6,9 +6,8 @@ import * as AiIcons from 'react-icons/ai';
 import { NavigationData } from '../../NavigationData';
 import { IconContext } from 'react-icons';
 
-//Felicia
-
-
+// funktionen hanterar öppning och stängning av hamburgermenyn. //
+// sidebar ska inte visas förrän användare klickar på hamburger ikonen. //
 function Navigation() {
   const [sidebar, setSidebar] = useState(false);
 
@@ -31,7 +30,8 @@ function Navigation() {
     }
 
   });
-
+  // IconContext.Provider måste användas för att kunna ändra färg på husikonen som tar en till startsidan. //
+  // navigationData renderar ut alla paths och dess titlar som ger en fungerande navigation. //
   return (
     <div ref={menuRef}>
       <IconContext.Provider value={{ color: 'var(--text-primary)' }}>
