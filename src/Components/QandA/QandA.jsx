@@ -80,7 +80,7 @@ const QandA = () => {
       )}
     </div>
     </div>
-    <img className="glacier ice quizGlacier" alt="Glacier" src={Glacier}/>
+    <div className="articFooter"><img className="glacier ice quizGlacier" alt="Glacier" src={Glacier}/></div>
   
 </>
      );
