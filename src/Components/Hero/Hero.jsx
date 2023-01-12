@@ -8,7 +8,7 @@ const Hero = () => {
     <div className="hero">
         <div className = "heroSection container"> 
 
-<div class="css-typing">
+<div className="css-typing">
   <h1 className="heroHeading">
   Jordens klimat är hotat...
   </h1>

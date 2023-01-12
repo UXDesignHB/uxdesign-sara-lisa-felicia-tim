@@ -14,20 +14,20 @@ const City = () => {
 
         <>
  
-     <img className="clouds" src={Clouds}/>
-        <img className="moon" src={Moon}/>
-        <img className="clouds" src={Clouds}/>
-        <img className="clouds2" src={Clouds}/>
+     <img className="clouds" alt="Clouds" src={Clouds}/>
+        <img className="moon" alt="Moon"  src={Moon}/>
+        <img className="clouds" alt="Clouds"  src={Clouds}/>
+        <img className="clouds2" alt="Clouds"  src={Clouds}/>
 
         <div className="cityWrapper">
-        <img className="skyline" src={Skyline}/>
-        <img className="ferriswheel" src={Ferriswheel}/>
-        <img className="tivoli" src={Tivoli}/>
+        <img className="skyline" alt="Skyline"  src={Skyline}/>
+        <img className="ferriswheel" alt="Ferriswheel"  src={Ferriswheel}/>
+        <img className="tivoli" alt="Tivoli"  src={Tivoli}/>
         </div>
       
 
         <div className="waterSection">
-        <img className="reflection" src={Reflection}/>
+        <img alt="reflection"  className="reflection" src={Reflection}/>
         </div>
 
         </>

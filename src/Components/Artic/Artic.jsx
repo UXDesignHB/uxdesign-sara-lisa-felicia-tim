@@ -46,7 +46,7 @@ const Artic = () => {
             <div className="articButtons">
                 <Link to="/smaltande-glaciarer" className="button1">
 
-                    <button class="button b1 smallHeading">
+                    <button className="button b1 smallHeading">
                         +
                     </button>
 
@@ -54,7 +54,7 @@ const Artic = () => {
 
                 <Link to="/co2-utslapp" className="button2">
 
-                    <button class="button b2 smallHeading">
+                    <button className="button b2 smallHeading">
                         +
                     </button>
 
@@ -62,7 +62,7 @@ const Artic = () => {
 
                 <Link to="/global-uppvarming" className="button3">
 
-                    <button class="button b3 smallHeading">
+                    <button className="button b3 smallHeading">
                         +
                     </button>
 
@@ -70,7 +70,7 @@ const Artic = () => {
 
                 <Link to="/fragor " className="button4">
 
-                    <button class="button b4 smallHeading">
+                    <button className="button b4 smallHeading">
                         +
                     </button>
 
@@ -78,7 +78,7 @@ const Artic = () => {
 
                 <Link to="/stigande-havsnivaer" className="button5">
 
-                    <button class="button b5 smallHeading">
+                    <button className="button b5 smallHeading">
                         +
                     </button>
 
@@ -86,7 +86,7 @@ const Artic = () => {
 
                 <Link to="/tips" className="button6">
 
-                    <button class="button b6 smallHeading">
+                    <button className="button b6 smallHeading">
                         +
                     </button>
 
@@ -94,7 +94,7 @@ const Artic = () => {
 
             </div>
 
-            <img className="glacier ice" src={Glacier}/>
+            <img className="glacier ice" alt="Glacier" src={Glacier}/>
 
         </div> 
         </div>

@@ -39,8 +39,6 @@ const Melting = () => {
     setMessage1(event.target.value);
   };
 
-  let defaultValue = "Antal observationer";
-
   return (
     <div className="container diagramPadding">
       {data2
