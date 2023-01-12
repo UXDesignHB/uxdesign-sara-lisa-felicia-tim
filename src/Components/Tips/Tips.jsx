@@ -1,8 +1,7 @@
 import "./Tips.css";
-import CO2 from "../../Images/ClimateIcons/CO2.png";
 import Glacier from "../../Images/Glacier1.png";
-import Bear from "../../Images/Bear.png";
 
+//Vändbara kort som visar en rubrik och en bild på framsidan av kortet och som roter 180 grader vid hovering och då visar en liten beskrivande text.
 const Tips = () => {
   return (
     <div className="tipsSection">
@@ -18,11 +17,13 @@ const Tips = () => {
 
       <div className="outerContainer">
         <div className="innerContainer" id="item1">
-          <div class="flip-card">
+             <div class="flip-card"> 
             <div class="flip-card-inner">
-              <div class="flip-card-front flip-card-front1">
+               {/* visar texten nedan på framsidan av korten. Beroende på vilken siffra det har så stylas det genom css-filen */}
+              <div class="flip-card-front flip-card-front1"> 
                 <p className="smallHeading tipsHeading">Minska på köttet</p>
               </div>
+               {/* visar texten nedan på baksidan av kortet. Beroende på vilken siffra det har så stylas det genom css-file */}
               <div class="flip-card-back flip-card-back1">
                 <p>
                   Utsläpp från boskap står för 14,5% av alla växthusgaser. Genom
