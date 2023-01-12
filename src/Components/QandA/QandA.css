@@ -7,21 +7,16 @@
   }
   
   .quizWrapper {
-    /* background-color: #252d4a; */
     color: var(--text-primary);
     min-height: 12.5rem;
-    /* height: 15.625rem; */
     height: min-content;
-    /* padding: 20px; */
     display: flex;
     justify-content: space-evenly;
     padding-top: 2rem;
-    /* padding-bottom: 6.2rem; */
     z-index: 500;
   }
   
   .quizScore {
-    /* display: flex; */
     font-size: 24px;
     align-items: center;
   }
@@ -30,7 +25,7 @@
     margin-top: 1rem;
   }
   
-  /* QUESTION/LEFT SECTION */
+  /* vänstra sektionen/ frågorna */
   .quizLeft {
     width: 100%;
     position: relative;
@@ -54,7 +49,7 @@
     padding-bottom: 1.5rem;
   }
   
-  /* ANSWERS/RIGHT SECTION */
+  /* högra sektionen/ svarsalternativen */
   .quizAnswer {
     width: 55%;
     display: flex;
@@ -94,14 +89,6 @@
     font-size: 1.1rem;
   }
   
-  .correct {
-    background-color: #2f922f89;
-  }
-  
-  /* .incorrect {
-    background-color: #ff3333;
-  } */
-  
   .btn:nth-child(1):hover {
     background-color: var(--blue);
   }
@@ -120,7 +107,8 @@
   .btn:focus {
     outline: none;
   }
-
+  
+  /* Hanterar bilden med galciärer, isbjörnar och pingviner */
   .quizGlacier {
     margin-top: 20%;
   }

@@ -1,8 +1,7 @@
+//Nedan kod fungerar på samma vis som filen Co2.jsx som har blivit utförligt kommenterad steg för steg.
+//För att inte behöva sitta och bara kopiera över kommenrarer så hänvisar vi till den sidan för kodkommentarer samt att denna information även skrivits in i kodrapporten. 
 
-import "./GlobalWarming.css";
 import "../ThemePopup/ThemePopup.css"
-
-
 import { getGlobalTempData2 } from '../../DiagramData';
 import { getInformationData } from '../../DiagramData';
 
