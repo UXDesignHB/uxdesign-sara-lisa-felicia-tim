@@ -6,19 +6,19 @@ import Bear from "../../Images/Bear.png";
 import Confetti from 'react-confetti'
 
 const QandA = () => {
-
+  // definierar arrayen med frågorna till quizet // 
   const quizArray = getQuestions();
-
+  // sätter utgångsvärdena för vilken fråga användaren är på och antalet poäng //
   const [currentQuestion, setCurrentQuestion] = useState(0);
   
   const [showScore, setShowScore] = useState(false);
   const [score, setScore] = useState(0);
-
+  // hanterar svaret som användare klickar på, om svaret är rätt för frågan adderas ett poäng //
   const handleAnswerOptionClick = (isCorrect) => {
     if (isCorrect) {
       setScore(score + 1);
     }
-
+    // definierar antalet frågor gjorda + kvar att besvara, om alla frågor är besvarade visas totala poängen för quizet //
     const nextQuestion = currentQuestion + 1;
     if (nextQuestion < quizArray.length) {
       setCurrentQuestion(nextQuestion);
@@ -27,13 +27,16 @@ const QandA = () => {
     }
   };
 
-  /* Resets the quiz back to default */
+  // Återställer quizet till utgångsvärdena //
   const restartGame = () => {
     setScore(0);
     setCurrentQuestion(0);
     setShowScore(false);
   };
 
+    // koden är uppdelad för att kunna hantera att sidan renderas om med annan kod vid avslutat quiz //
+    // första delen hanterar visandet av antalet totalpoäng och en knapp som startar om quizet, //
+    // andra delen innehåller allt för själva frågorna och svarsalternativen. //
     return ( 
  <>
     <div className="container quizContainer">
@@ -56,13 +59,9 @@ const QandA = () => {
       ) : (
         <>
           <div className="quizLeft">
-            {/* <div className="quizQuestionCount smallHeading">
-              <span>Fråga {currentQuestion + 1}</span>/{quizArray.length}
-            </div> */}
             <div className="largeText">
               {quizArray[currentQuestion].questionText}
             </div>
-            {/* {quizArray[currentQuestion].questionIcon} */}
           </div>
           <div className="quizAnswer">
             {quizArray[currentQuestion].answerOptions.map((answerOption) => (
