@@ -22,7 +22,7 @@ const Storyline = () => {
                 <p className="largeText">Till skillnad från tidigare klimatförändringar beror
                     den vi ser idag på människan.
                 </p>
-                <img className="plane" src={Plane}/>
+                <img className="plane" alt="Plane" src={Plane}/>
             </div>
             
         </>
