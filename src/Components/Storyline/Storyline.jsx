@@ -1,12 +1,12 @@
-
+//Import av Storyline CSS fil
 import "./Storyline.css";
+//Importerar bild från Images-mapp
 import Plane from "../../Images/Plane.png";
 
+// Storyline innehåller element med animerade stjärnor som text för att bygga ett narrativ. Den sista bilden på ett plan är animerad för att väcka uppmärksamhhet.
 const Storyline = () => {
     return (
-<>
-    
-            
+    <>
 
             <div id="stars2"></div>
             <div id="stars3"></div>
@@ -24,7 +24,8 @@ const Storyline = () => {
                 </p>
                 <img className="plane" src={Plane}/>
             </div>
-            </>
+            
+        </>
 
     );
 }

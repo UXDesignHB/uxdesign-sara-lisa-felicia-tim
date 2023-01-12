@@ -22,7 +22,7 @@
 }
 
 .moon {
-    position: static;
+    position: absolute;
     z-index: 100;
 }
 
@@ -38,12 +38,6 @@
     bottom: 0;
 } 
 
-
-
-.ferriswheel {
-animation: rotationanimation 15s center;
-transform-origin: center;
-} 
 
 @keyframes rotationanimation {
     from {

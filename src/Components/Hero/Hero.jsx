@@ -1,6 +1,7 @@
+//Import av Hero CSS fil
 import "./Hero.css";
 
-
+//Komponenten innehåller en animerad text fört att skapa intresse
 const Hero = () => {
     return (
 
