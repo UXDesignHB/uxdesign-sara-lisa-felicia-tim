@@ -1,5 +1,3 @@
-//Importerar css från ThemePopup
-import "../ThemePopup/ThemePopup.css"
 //Importerar CO2 datan från DiagramData till diagram
 import { getCo2Data2 } from '../../DiagramData';
 //Importerar datan för texterna från DiagramData till diagram

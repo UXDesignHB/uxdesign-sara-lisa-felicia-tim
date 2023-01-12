@@ -7,7 +7,7 @@
 .App {
   background-color: var(--background);
 }
-
+/* Här styrs färgerna för dark mode */
 [data-theme='dark'] {
   --background: #130203;
   --text-primary: #F9F5F5;
@@ -29,7 +29,7 @@
   --citysemidark: #48385a;
   --citybright: #6b5980;
 }
-
+/* Här styrs färgerna för light mode */
 [data-theme='light'] {
   --background: #F9F5F5;
   --text-primary: #130203;
